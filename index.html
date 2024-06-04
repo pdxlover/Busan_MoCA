@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부산현대미술관</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/ani.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="index.html">부산현대미술관 로고</a>
+                </h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="sub2.html">Visit</a>
+                            <ul class="depth2">
+                                <li><a href="#">전시 시간</a></li>
+                                <li><a href="#">온라인 예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub1.html">Exhibition</a>
+                            <ul class="depth2">
+                                <li><a href="#">현재 전시</a></li>
+                                <li><a href="#">예정 전시</a></li>
+                                <li><a href="#">지난 전시</a></li>
+                                <li><a href="#">온라인 미술관</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Event</a>
+                            <ul class="depth2">
+                                <li><a href="#">현재 프로그램</a></li>
+                                <li><a href="#">예정 프로그램</a></li>
+                                <li><a href="#">지난 프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Collection</a>
+                            <ul class="depth2">
+                                <li><a href="#">소장품 보기</a></li>
+                                <li><a href="#">모카이브</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Store</a>
+                            <ul class="depth2">
+                                <li><a href="#">미술관 판매 상품</a></li>
+                                <li><a href="#">온라인 판매 상품</a></li>
+                            </ul>
+                        </li>  
+                    </ul><!--.gnb-->
+
+                    <div class="ham">
+                        <a href="#"><img src="img/icon_ham_white.png" alt="메뉴열기"></a>
+                    </div>
+
+                    <div class="dim"></div>
+
+                    <div class="mgnb_wrap">
+                        <div class="mlogo">
+                            <img src="img/logo_white.png" alt="부산현대미술관로고">
+                        </div><!--.mlogo--> 
+                        <ul class="mgnb">
+                            <li><a href="sub2.html">Visit</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">전시 시간</a></li>
+                                    <li><a href="#">온라인 예약</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sub1.html">Exhibition</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">현재 전시</a></li>
+                                    <li><a href="#">예정 전시</a></li>
+                                    <li><a href="#">지난 전시</a></li>
+                                    <li><a href="#">온라인 미술관</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Event</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">현재 프로그램</a></li>
+                                    <li><a href="#">예정 프로그램</a></li>
+                                    <li><a href="#">지난 프로그램</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Collection</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">소장품 보기</a></li>
+                                    <li><a href="#">모카이브</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Store</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">미술관 판매 상품</a></li>
+                                    <li><a href="#">온라인 판매 상품</a></li>
+                                </ul>
+                            </li>
+                        </ul><!--.mgnb-->
+
+                        <div class="mgnb_close">
+                            <img src="img/icon_close_white.png" alt="메뉴 닫기 이미지">
+                        </div><!--.mgnb_close-->
+
+                        <div class="lang">
+                            <div class="kor">KOR</div>
+                            <div class="eng">ENG</div>
+                        </div><!--.mlang-->
+
+                    </div><!--.mgnb_wrap-->
+                </nav>
+
+                <div class="search">
+                    서치박스
+                </div><!--.search-->
+                <div id="gray_layer"></div>
+
+                <div id="over_layer">
+                    <form class="search_pop">
+                        <fieldset>
+                            <legend>검색영역</legend>
+                            <input type="text" placeholder="검색어를 입력해 주세요!">
+                            <button type="button">검색</button>
+                        </fieldset>
+                    </form>
+                    <a href="#" class="search_close">
+                        <img src="img/icon_close_black.png" alt="검색창 닫기">
+                    </a>
+                </div>
+
+                <div class="pclang">
+                    <div class="kor">KOR</div>
+                    <div class="eng">ENG</div>
+                </div><!--.lang-->
+
+            </div><!--.inner-->
+        </header>
+
+        <div id="content">
+                <div class="m_main_slide_wrap">
+                    <div class="swiper m_main_slide">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide slide1">
+                            <div class="slide_txt_wrap">
+                            <span>THIS IS NOT JUST LOCAL</span>
+                            <h3>이것은 부산이 아니다<br>
+                                :전술적 실천</h3>
+                                <a href="#">More +</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slide2">
+                            <div class="slide_txt_wrap">
+                            <span>MASTERFULL ATTENTION SEEKERS</span>
+                            <h3>능수능란한 관종</h3>
+                                <a href="#">More +</a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slide3">
+                            <div class="slide_txt_wrap">
+                            <span>PATRICK BLANC</span>
+                            <h3>패트릭 블랑<br>
+                                :수직정원</h3>
+                                <a href="#">More +</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                      </div>
+                </div><!--.m_main_slide_wrap-->
+
+                <!--pc버전 메인 비주얼 영역-->
+                <div class="main_visual_wrap">
+                    <div class="main_photo">
+                        <a href="#">
+                            <img src="img/main_photo1.png" alt="메인 사진1">
+                        </a>
+                    </div>
+                    <div class="main_txt">
+                        <p>THIS IS NOT JUST LOCAL:TACTICAL PRACTICES</p>
+                        <h3>이것은 부산이 아니다<br>
+                            :전술적 실천</h3>
+                        <a href="#">More +</a>
+                        <span>2024.02.24 - 2024.07.07</span>
+                    </div>
+                    <div class="main_txt">
+                        <p>THIS IS NOT JUST LOCAL:TACTICAL PRACTICES</p>
+                        <h3>이것은 부산이 아니다<br>
+                            :전술적 실천</h3>
+                        <a href="#">More +</a>
+                        <span>2024.02.24 - 2024.07.07</span>
+                    </div>
+                    <div class="main_photo">
+                        <a href="#">
+                            <img src="img/main_photo2.png" alt="메인 사진1">
+                        </a>
+                    </div>
+                    <div class="main_photo">
+                        <a href="#">
+                            <img src="img/main_photo3.png" alt="메인 사진1">
+                        </a>
+                    </div>
+                    <div class="main_txt">
+                        <p>THIS IS NOT JUST LOCAL:TACTICAL PRACTICES</p>
+                        <h3>이것은 부산이 아니다<br>
+                            :전술적 실천</h3>
+                        <a href="#">More +</a>
+                        <span>2024.02.24 - 2024.07.07</span>
+                    </div>
+                </div><!--.main_visual_wrap-->
+
+                <div class="event">
+                    <div class="inner" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="event_title_wrap">
+                            <p class="sub_title">- Event -</p>
+                            <h3 class="title">today's event</h3>
+                        </div><!--.event_title_wrap-->
+                        <div class="event_photo_wrap">
+                            <div class="event_photo left">
+                                <a href="#">
+                                <img src="img/event_pic_1.png" alt="이벤트 사진1">
+                                <div class="event_photo_txt">
+                                <p class="event_photo_sub">A PLACE GOVERNED BY DESIRE</p>
+                                <h3 class="event_photo_title">염하다. 절이다. 저장하다.</h3>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="event_photo right">
+                                <a href="#">
+                                <img src="img/event_pic_2.png" alt="이벤트 사진2">
+                                <div class="event_photo_txt">
+                                <p class="event_photo_sub">SALTED MOMENT</p>
+                                <h3 class="event_photo_title">욕망의 장소<br>
+                                    :표류하는 지표들</h3>
+                                </div>
+                                </a>
+                            </div>
+                        </div><!--.event_photo_wrap-->
+                    </div><!--.inner-->
+                </div><!--.event-->
+
+                <div class="collection">
+                    <div class="inner">
+                        <div class="event_title_wrap">
+                            <p class="sub_title">- Collection -</p>
+                            <h3 class="title">our collection</h3>
+                        </div><!--.event_title_wrap-->
+                        <div class="swiper collection_list">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="img/collection_img1.png" alt="사진1"></a>
+                                    <div class="collection_list_txt_box">
+                                    <dl>
+                                        <dt>춤추는 미생물</dt>
+                                        <dd class="name">김순임</dd>
+                                        <dd class="size">304cm X 543cm</dd>
+                                    </dl>
+                                    <span>01</span>
+                                </div><!--.collection_list_txt_box-->
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="img/collection_img2.png" alt="사진2"></a>
+                                    <div class="collection_list_txt_box">
+                                        <dl>
+                                            <dt>침묵하는 북</dt>
+                                            <dd class="name">홍영인</dd>
+                                            <dd class="size">297cm X 345cm</dd>
+                                        </dl>
+                                        <span>02</span>
+                                    </div><!--.collection_list_txt_box-->
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="img/collection_img3.png" alt="사진3"></a>
+                                    <div class="collection_list_txt_box">
+                                        <dl>
+                                            <dt>풍경 연구S #1</dt>
+                                            <dd class="name">강신대</dd>
+                                            <dd class="size">10분 42초</dd>
+                                        </dl>
+                                        <span>03</span>
+                                    </div><!--.collection_list_txt_box-->
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="img/collection_img4.png" alt="사진4"></a>
+                                    <div class="collection_list_txt_box">
+                                        <dl>
+                                            <dt>Dummy No.63 ~ No.80</dt>
+                                            <dd class="name">박웅규</dd>
+                                            <dd class="size">60cm X 60cm</dd>
+                                        </dl>
+                                        <span>04</span>
+                                    </div><!--.collection_list_txt_box-->
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="img/collection_img5.png" alt="사진5"></a>
+                                    <div class="collection_list_txt_box">
+                                        <dl>
+                                            <dt>고압선</dt>
+                                            <dd class="name">정진윤</dd>
+                                            <dd class="size">234cm X 91cm</dd>
+                                        </dl>
+                                        <span>05</span>
+                                    </div><!--.collection_list_txt_box-->
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="img/collection_img6.png" alt="사진6"></a>
+                                    <div class="collection_list_txt_box">
+                                        <dl>
+                                            <dt>설전/雪戰</dt>
+                                            <dd class="name">최대진</dd>
+                                            <dd class="size">120cm X 200cm</dd>
+                                        </dl>
+                                        <span>06</span>
+                                    </div><!--.collection_list_txt_box-->
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="img/collection_img7.png" alt="사진7"></a>
+                                    <div class="collection_list_txt_box">
+                                        <dl>
+                                            <dt>너의 화장대</dt>
+                                            <dd class="name">문지영</dd>
+                                            <dd class="size">145.5cm X 112.2cm</dd>
+                                        </dl>
+                                        <span>07</span>
+                                    </div><!--.collection_list_txt_box-->
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#"><img src="img/collection_img8.png" alt="사진8"></a>
+                                    <div class="collection_list_txt_box">
+                                        <dl>
+                                            <dt>미술공간 안</dt>
+                                            <dd class="name">박자현</dd>
+                                            <dd class="size">139cm X 197cm</dd>
+                                        </dl>
+                                        <span>08</span>
+                                    </div><!--.collection_list_txt_box-->
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div><!--.swiper collection_list-->
+                    </div><!--.inner-->
+                </div><!--.collecion-->
+
+                <div class="ticket">
+                    <div class="inner" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="event_title_wrap">
+                            <p class="sub_title">- Visit -</p>
+                            <h3 class="title">ONLINE TICKETS</h3>
+                        </div><!--.event_title_wrap-->
+                        <div class="ticket_book_wrap">
+                            <div class="book_txt">
+                                <div class="book_txt_logo">
+                                    <img src="img/logo_black.png" alt="로고">
+                                </div><!--.book_txt_logo-->
+                                <div class="book_txt_deco">
+                                    <img src="img/ticket_book_deco.png" alt="배경">
+                                </div><!--.book_txt_deco-->
+                                <div class="book_txt_deco2">
+                                    <img src="img/ticket_book_deco.png" alt="배경2">
+                                </div><!--.book_txt_deco2-->
+                                <div class="book_txt_title">
+                                    <p>온라인 예약</p>
+                                    <span>( Book a Ticket )</span>
+                                </div><!--.book_txt_title-->
+                            </div>
+                            <div class="book_box_wrap">
+                                <div class="book_box book1">
+                                    <div class="book_txt_wrap">
+                                    <span>THIS IS NOT JUST LOCAL:TACTICAL PRACTICES</span>
+                                    <h3>이것은 부산이 아니다: 전술적 실천</h3>
+                                    <a href="#">예약하기</a>
+                                    </div><!--.book_txt_wrap-->
+                                    <div class="book_box_deco">
+                                    <img src="img/ticket_book_deco_white.png" alt="심볼">
+                                    </div>
+                                </div>
+                                <div class="book_box book2">
+                                    <div class="book_txt_wrap">
+                                        <span>MASTERFUL ATTENTION SEEKERS</span>
+                                        <h3>능수능란한 관종</h3>
+                                        <a href="#">예약하기</a>
+                                        </div><!--.book_txt_wrap-->
+                                        <div class="book_box_deco">
+                                            <img src="img/ticket_book_deco_white.png" alt="심볼">
+                                        </div>
+                                </div>
+                                <div class="book_box book3">
+                                    <div class="book_txt_wrap">
+                                        <span>PATRICK BLANC: VERTICAL GARDEN</span>
+                                        <h3>패트릭 블랑: 수직정원</h3>
+                                        <a href="#">예약하기</a>
+                                        </div><!--.book_txt_wrap-->
+                                        <div class="book_box_deco">
+                                            <img src="img/ticket_book_deco_white.png" alt="심볼">
+                                        </div>
+                                </div>
+                        </div><!--.book_box_wrap-->
+                        </div><!--.ticket_book_wrap-->
+                    </div><!--.inner-->
+                </div><!--.ticket-->
+
+                <div class="store">
+                    <div class="inner" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="store_title_wrap">
+                            <p class="store_sub_title">- Visit -</p>
+                            <h3 class="store_title">ONLINE TICKETS</h3>
+                        </div><!--.event_title_wrap-->
+                        <div class="md_box_wrap">
+                            <div class="md_box md_box_txt md_rec">
+                               <p>- Store -</p>
+                               <h3>OUR<br>MERCHANDISE</h3>
+                               <span>뛰어난 조형감각으로 이루어진 작품을 그대로 
+                                담아 소장할 수 있는 엽서, 마그넷, 아트 키트, 
+                                아트포스터를 미술가게에서 만나보세요.</span>
+                            </div>
+                            <div class="md_box md_sq">
+                            <a href="#"><img src="img/md_pic1.png" alt="상품사진"></a>
+                            <div class="md_txt">
+                                <p>Tea Cup</p>
+                                <span>티컵 세트</span>
+                            </div><!--.md_txt-->
+                            </div>
+                            <div class="md_box md_sq">
+                                <a href="#"><img src="img/md_pic2.png" alt="상품사진"></a>
+                                <div class="md_txt">
+                                    <p>Mood Light</p>
+                                    <span>인테리어 무드 등</span>
+                                </div><!--.md_txt-->
+                            </div>
+                            <div class="md_box md_rec">
+                                <a href="#"><img src="img/md_pic3.png" alt="상품사진"></a>
+                                <div class="md_txt">
+                                    <p>Art Brush</p>
+                                    <span>아트 브러쉬 세트</span>
+                                </div><!--.md_txt-->
+                            </div>
+                        </div><!--.md_box_wrap-->
+                    </div><!--.inner-->
+                </div><!--.store--> 
+        </div><!--#content-->
+        <div class="top_btn">
+            <a href="#"><img src="img/top_btn.png" alt="맨위로가기"></a>
+        </div><!--.top_btn-->
+    </div><!--#wrap-->
+
+    <footer>
+        <div class="inner">
+            <div class="footer">
+                <a href="#"><img src="img/f_logo.png" alt="부산현대미술관로고"></a>
+                <div class="f_info">
+                    <p>
+                        <span>(우 49300) 부산광역시 사하구 낙동남로 1191 (하단동) 부산현대미술관</span>
+                        <span>전화 : 051 - 220-7400~1</span> 
+                    </p>
+                    <p>
+                        <span>홈페이지의 모든 내용들은 무단 복제가 불가합니다.</span>
+                    </p>
+                    <p>
+                        <span>&copy;copyright 2017 by Museum of Contemporary Art Busan</span>
+                        <span>All rights reserved.</span>
+                    </p>
+                </div>
+                <div class="f_sns">
+                    <ul>
+                        <li><a href="#">
+                            <img src="img/f_sns_twt.png" alt="트위터">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/f_sns_ig.png" alt="인스타그램">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/f_sns_fb.png" alt="페이스북">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/f_sns_yt.png" alt="유튜브">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/f_sns_chat.png" alt="위쳇">
+                        </a></li>
+                    </ul>
+                </div>
+            </div><!--.footer-->
+            
+        </div><!--.inner-->
+    </footer>
+</body>
+</html>

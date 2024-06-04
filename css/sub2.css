@@ -1,0 +1,520 @@
+@charset "utf-8";
+
+/* 모바일*/
+/*.pclang{
+    display: none;
+}*/
+
+.online_ticket{
+    position: relative;
+}
+.online_ticket .ex_title{
+    display: flex;
+    margin-bottom: 60px;
+}
+.online_ticket .ex_title span{
+    line-height: 40px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.nav_bar li a{
+    white-space: wrap;
+}
+
+.online_ticket{
+    padding: 40px 0;
+}
+.calendar{
+    width: 100%;
+   
+}
+.months{
+    font-family: 'SeoulNamsan';
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.months p{
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.months span{
+    font-size: 40px;
+    font-weight: bold;
+}
+.weeks ul{
+    display: flex;
+    background-color: #3574F2;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.weeks li{
+    width: calc(100% / 7);
+    padding: 5px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.days ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.days li{
+    width: calc((100% - 12px) / 7);
+    height: 50px;
+    background-color: #eee;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'SeoulNamsan';
+    margin-right: 2px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.days li.margin{
+    margin-right: 0;
+}
+.days li.marginb{
+    margin-bottom: 0;
+}
+.days li.inactive{
+    color: rgba(53, 116, 242, 0.5);
+    background-color: #fff;
+}
+
+.days li.active{
+    background-color: #3574F2;
+    color: #fff;
+}
+
+.days li.inactive.active{
+    color: rgba(53, 116, 242, 0.5);
+    background-color: #fff;
+}
+
+
+.schedule{
+    margin: 40px 0;
+    font-size: 16px;
+}
+.schedule p{
+    margin-bottom: 10px;
+}
+.schedule .bold{
+    font-weight: bold;
+    color: #3574F2;
+    margin-right: 20px;
+}
+.schedule .gray{
+    color: gray;
+}
+.entry_fee{
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+.entry_fee_flex_wrap{
+    width: 60%;
+}
+.count{
+    width: 40%;
+}
+.personal_price{
+    margin-bottom: 40px;
+}
+.personal_price_title{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.personal_price_title span{
+    font-size: 14px;
+}
+
+/*입장권 가격은 모바일에서는 안보이게*/
+.personal_price_money{
+    display: none;
+}
+
+.personal_price_sub{
+    margin-top: 20px;
+}
+.personal_price_sub p{
+    display: flex;
+    margin-bottom: 30px;
+}
+.personal_price_sub p span{
+    font-weight: bold;
+}
+.personal_price_sub p span.small_txt{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+.special_price_title{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.special_price_title span{
+    font-size: 14px;
+}
+.special_price_sub{
+    margin-top: 20px;
+}
+.special_price_sub p{
+    display: flex;
+    margin-bottom: 20px;
+}
+.special_price_sub p span{
+    font-weight: bold;
+}
+.special_price_sub p span.small_txt{
+    font-size: 12px;
+    font-weight: normal;
+}
+.special_price_money{
+    display: none;
+}
+
+
+/*입장권 가격*/
+.ticket_fee .ex_title{
+    display: flex;
+    margin-bottom: 20px;
+}
+.ticket_fee .ex_title span{
+    line-height: 40px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+
+
+
+/*숫자 카운트*/
+.count{
+    padding-top: 50px;
+}
+.count_wrap{
+    height: 115px;
+  }
+.count_wrap_2{
+    height: 90px;
+    padding-top:115px;
+}
+.count_box{
+    display: flex;
+    margin-bottom: 25px;
+}
+.result{
+    padding: 0 30px;
+    width: 70px;
+    font-size: 18px;
+}
+
+.count_box .plus,
+.count_box .minus{
+    width: 40px;
+    height: 40px;
+    background-color: #3574F2;
+    color: #fff;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/*총 결재 금액*/
+.total_fee .ex_title{
+    display: flex;
+    margin-bottom: 20px;
+}
+.total_fee .ex_title span{
+    line-height: 40px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.total_fee_wrap{
+    padding: 40px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
+}
+.total_fee_info p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.total_fee_info .small{
+    font-size: 12px;
+    font-weight: normal;
+}
+.total_fee_info .price{
+    float: right;
+}
+.total_fee_info .total_price::before{
+    content: "";
+    display: block;
+    border-top:1px solid #fff ;
+    margin-bottom: 20px;
+}
+
+.total_fee_info .today{
+    margin-bottom: 20px;
+}
+
+
+.pay a{
+    width: 90px;  
+    height: 38px;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 10px;
+    background: url(../img/more_btn_deco.png) no-repeat center left / 38px auto;
+    transition: all 0.3s;
+    margin: 0 auto;
+    text-align:center ;
+
+}
+
+
+.pay_ani{
+    background: url(../img/more_btn_deco_long.png) no-repeat center left / 38px auto;
+}
+
+/*768 이상*/
+@media screen and (min-width:768px) {
+    .days li{
+        height: 150px;
+        font-size: 30px;
+    }
+
+    .months p{
+        font-size: 60px;
+    }
+    .months span{
+        font-size: 60px;
+    }
+    .online_ticket .ex_title{
+        margin-bottom: 80px;
+    }
+
+    
+    
+}
+
+
+/*1200 이상*/
+
+@media screen and (min-width:1200px) {
+
+    .days li{
+        height: 200px;
+        font-size: 40px;
+    }
+
+    .months{
+        top: 180px;
+    }
+    .online_ticket .ex_title{
+        margin-bottom: 100px;
+    }
+    .personal_price_money,
+    .special_price_money{
+        display: block;
+    }
+    .personal_price,
+    .special_price{
+        display: flex;
+
+    }
+    .personal_price_title,
+    .special_price_title{
+        font-size: 18px;
+        width: 600px;
+    }
+    .personal_price_sub,
+    .special_price_sub{
+        width: 600px;
+        margin-top: 0;
+    }
+    .personal_price_sub span,
+    .special_price_sub span{
+        font-size: 18px;
+    }
+    .personal_price_sub span.small_txt,
+    .special_price_sub span.small_txt{
+        font-size: 16px;
+        line-height: 2;
+    }
+    .personal_price_money,
+    .special_price_money{
+        width: 400px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .personal_price_money p,
+    .special_price_money p{
+        margin-bottom: 40px;
+    }
+
+   
+    /*.personal_price_title{
+        width: auto;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
+    }
+    .personal_price_sub{
+        padding-left: 200px;
+    }
+    .personal_price_sub p{
+        width: auto;
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+    .personal_price_sub span{
+        line-height: 18px;
+        padding-left: 10px;
+    }
+    
+    .personal_price_money{
+        display: block;
+        width: auto;
+        padding-left: 200px;
+        text-align: right;
+
+    }
+    .personal_price_money p{
+        margin-bottom: 40px;
+        font-weight: bold;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+  
+    .special_price{
+        display: flex;
+        position: relative;
+ 
+    }
+    .special_price_title{
+        font-size: 18px;
+        padding: 20px 0;
+        
+    }
+    .special_price_sub{
+        padding-left: 200px;
+    }
+    .special_price_sub p{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+   
+    .special_price_money{
+        display: block;
+        width: auto;
+        text-align: right;
+        padding: 20px 0 20px 315px;
+
+    }
+    .special_price_money p{
+        font-size: 18px;
+        font-weight: bold;
+
+    }
+    */
+
+    .count{
+        padding-top: 0;
+        padding-left: 40px;
+    }
+   
+    .count_wrap_2{
+
+        padding-top:115px;
+    }
+    .count_box{
+        display: flex;
+        margin-bottom: 25px;
+    }
+  
+
+    .result{
+        font-size: 20px;
+        padding: 0 40px;
+    }
+
+
+
+    .total_fee_wrap{
+        display: flex;
+        position: relative;
+    }
+    .total_fee_info{
+        width: 70%;
+    }
+    .total_fee_info .total_price{
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    .total_fee_info .total_price::before{
+        content: "";
+        display: block;
+        border-top:1px solid #fff ;
+        margin-bottom: 40px;
+    }
+
+    /*
+    .pay{
+        width: 20%;
+        height: 50px;
+        margin-top: 0;
+        margin-left: 40px;
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        transform: translateY(-50%);
+    }
+    */
+
+    .pay a{
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        background: url(../img/more_btn_deco.png) no-repeat center left/ 50px auto;
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+       
+    }
+    .pay a:hover{ /*마우스 오버하면 원 오른쪽으로 안됨*/
+        background-image: url(../img/more_btn_deco_long.png);
+        background-position: left;
+        background-size: 120px auto;
+    }
+
+
+
+    .ex_title{
+        margin: 80px 0;
+    }
+
+
+    
+   
+   
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/ani.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub1.css">
+    <link rel="stylesheet" href="css/sub2.css">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="index.html">부산현대미술관 로고</a>
+                </h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="sub2.html">Visit</a>
+                            <ul class="depth2">
+                                <li><a href="#">전시 시간</a></li>
+                                <li><a href="#">온라인 예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub1.html">Exhibition</a>
+                            <ul class="depth2">
+                                <li><a href="#">현재 전시</a></li>
+                                <li><a href="#">예정 전시</a></li>
+                                <li><a href="#">지난 전시</a></li>
+                                <li><a href="#">온라인 미술관</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Event</a>
+                            <ul class="depth2">
+                                <li><a href="#">현재 프로그램</a></li>
+                                <li><a href="#">예정 프로그램</a></li>
+                                <li><a href="#">지난 프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Collection</a>
+                            <ul class="depth2">
+                                <li><a href="#">소장품 보기</a></li>
+                                <li><a href="#">모카이브</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Store</a>
+                            <ul class="depth2">
+                                <li><a href="#">미술관 판매 상품</a></li>
+                                <li><a href="#">온라인 판매 상품</a></li>
+                            </ul>
+                        </li>  
+                    </ul><!--.gnb-->
+
+                    <div class="ham">
+                        <a href="#"><img src="img/icon_ham_white.png" alt="메뉴열기"></a>
+                    </div>
+
+                    <div class="dim"></div>
+
+                    <div class="mgnb_wrap">
+                        <div class="mlogo">
+                            <img src="img/logo_white.png" alt="부산현대미술관로고">
+                        </div><!--.mlogo--> 
+                        <ul class="mgnb">
+                            <li><a href="#">Visit</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">전시 시간</a></li>
+                                    <li><a href="#">온라인 예약</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Exhibition</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">현재 전시</a></li>
+                                    <li><a href="#">예정 전시</a></li>
+                                    <li><a href="#">지난 전시</a></li>
+                                    <li><a href="#">온라인 미술관</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Event</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">현재 프로그램</a></li>
+                                    <li><a href="#">예정 프로그램</a></li>
+                                    <li><a href="#">지난 프로그램</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Collection</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">소장품 보기</a></li>
+                                    <li><a href="#">모카이브</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Store</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">미술관 판매 상품</a></li>
+                                    <li><a href="#">온라인 판매 상품</a></li>
+                                </ul>
+                            </li>
+                        </ul><!--.mgnb-->
+
+                        <div class="mgnb_close">
+                            <img src="img/icon_close_white.png" alt="메뉴 닫기 이미지">
+                        </div><!--.mgnb_close-->
+
+                        <div class="lang">
+                            <div class="kor">KOR</div>
+                            <div class="eng">ENG</div>
+                        </div><!--.mlang-->
+
+                    </div><!--.mgnb_wrap-->
+                </nav>
+
+                <div class="search">
+                    서치박스
+                </div><!--.search-->
+                <div id="gray_layer"></div>
+
+                <div id="over_layer">
+                    <form class="search_pop">
+                        <fieldset>
+                            <legend>검색영역</legend>
+                            <input type="text" placeholder="검색어를 입력해 주세요!">
+                            <button type="button">검색</button>
+                        </fieldset>
+                    </form>
+                    <a href="#" class="search_close">
+                        <img src="img/icon_close_black.png" alt="검색창 닫기">
+                    </a>
+                </div>
+
+                <div class="pclang">
+                    <div class="kor">KOR</div>
+                    <div class="eng">ENG</div>
+                </div><!--.lang-->
+
+            </div><!--.inner-->
+        </header>
+
+        <div id="content">
+            <div class="inner">
+                <ul class="nav_bar">
+                    <li><a href="#online_ticket_book">온라인 티켓 예약</a></li>
+                    <li><a href="#entry_fee">입장권 가격</a></li>
+                    <li><a href="#total_fee">총 결제 금액</a></li>
+                </ul>
+
+                <div class="online_ticket">
+                    <div class="ex_title">
+                        <a name="online_ticket_book"><h2>온라인 티켓 예약</h2></a>
+                        <span>Book Online Tickets</span>
+                    </div><!--.ex_title-->
+
+                    <div class="calendar">
+                        <div class="months">
+                            <p>March</p>
+                            <span>2024</span>
+                        </div><!--.months-->
+                        <div class="weeks">
+                            <ul>
+                                <li>SUN</li>
+                                <li>MON</li>
+                                <li>TUE</li>
+                                <li>WED</li>
+                                <li>THR</li>
+                                <li>FRI</li>
+                                <li>SAT</li>
+                            </ul>
+                        </div><!--.weeks-->
+                        <div class="days">
+                            <ul>
+                                <li class="inactive">25</li>
+                                <li class="inactive">26</li>
+                                <li class="inactive">27</li>
+                                <li class="inactive">28</li>
+                                <li class="inactive">29</li>
+                                <li>1</li>
+                                <li class="margin">2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li class="margin">9</li>
+                                <li>10</li>
+                                <li>11</li>
+                                <li>12</li>
+                                <li>13</li>
+                                <li>14</li>
+                                <li class="active">15</li>
+                                <li class="margin">16</li>
+                                <li>17</li>
+                                <li>18</li>
+                                <li>19</li>
+                                <li>20</li>
+                                <li>21</li>
+                                <li>22</li>
+                                <li class="margin">23</li>
+                                <li>24</li>
+                                <li>25</li>
+                                <li>26</li>
+                                <li>27</li>
+                                <li>28</li>
+                                <li>29</li>
+                                <li class="margin">30</li>
+                                <li class="marginb">31</li>
+                            </ul>
+                        </div><!--.days-->
+                    </div><!--.calendar-->
+
+                    <div class="schedule">
+                        <p>
+                            <span class="bold">관람시간</span>
+                            <span class="gray">화~일: 10:00~18:00</span>
+                        </p>
+                        <p>
+                            <span class="bold">휴관일</span>
+                            <span class="gray">매주 월요일, 공휴일, 1월1일</span>
+                        </p>
+                    </div><!--.schedule-->
+
+                </div><!--.online_ticket-->
+
+                <div class="ticket_fee">
+                    <div class="ex_title">
+                        <a name="entry_fee"><h2>입장권 가격</h2></a>
+                        <span>Entry Fee</span>
+                    </div><!--.ex_title-->
+
+                    <div class="entry_fee">
+                        <div class="entry_fee_flex_wrap">
+                            <div class="personal_price">
+                                <p class="personal_price_title">개인<br><span>(Individually)</span></p>
+                                <div class="personal_price_sub">
+                                    <p>
+                                        <span>일반</span>
+                                        <span class="small_txt">(over 19)</span>
+                                    </p>
+                                    <p>
+                                        <span>청소년/군경</span>
+                                        <span class="small_txt">(Age 14 - 18/Military)</span>
+                                    </p>
+                                    <p>
+                                        <span>어린이</span>
+                                        <span class="small_txt">(Under 13)</span>
+                                    </p>
+                                    
+                                </div><!--.personal_price_sub-->
+                                <div class="personal_price_money">
+                                    <p>12,000원</p>
+                                    <p>6,000원</p>
+                                    <p>4,000원</p>
+                                </div>
+                            </div><!--.personal-->
+                            <div class="special_price">
+                                <p class="special_price_title">특별할인<br><span>(Special Discount)</span></p>
+                                <div class="special_price_sub">
+                                    <p>
+                                        <span>일반</span>
+                                        <span class="small_txt">(over 19)</span>
+                                    </p>
+                                </div><!--.personal_price_sub-->
+                                <div class="special_price_money">
+                                    <p>4,000원</p>
+                                </div>
+                            </div><!--.special_price-->
+                        </div><!--.entry_fee_flex_wrap-->
+                        <div class="count">
+                            <div class="count_wrap">
+                            <div class="count_box">
+                                <button type="button" class="plus">+</button>
+                                <div class="result">0</div>
+                                <button type="button" class="minus">-</button>
+                            </div><!--.count_box-->
+                            <div class="count_box">
+                                <button type="button" class="plus">+</button>
+                                <div class="result">0</div>
+                                <button type="button" class="minus">-</button>
+                            </div><!--.count_box-->
+                            <div class="count_box">
+                                <button type="button" class="plus">+</button>
+                                <div class="result">0</div>
+                                <button type="button" class="minus">-</button>
+                            </div><!--.count_box-->
+                            </div>
+                            <div class="count_wrap_2">
+                            <div class="count_box special_count">
+                                <button type="button" class="plus">+</button>
+                                <div class="result">0</div>
+                                <button type="button" class="minus">-</button>
+                            </div><!--.count_box special_count-->
+                            </div>
+                        </div><!--.count-->
+                        
+                    </div><!--.entry_fee-->
+                </div><!--.ticket_fee-->
+
+                <div class="total_fee">
+                    <div class="ex_title">
+                        <a name="total_fee"><h2>총 결제 금액</h2></a>
+                        <span>Total Fee</span>
+                    </div><!--.ex_title-->
+
+                    <div class="total_fee_wrap">
+                        <div class="total_fee_info">
+                            <p class="today">3월 15일 금요일</p>
+                            <p>
+                                <span>일반</span>
+                                <span class="small">Over 19</span>
+                                <span class="price">12,000원 X 1장</span>
+                            </p>
+                            <p class="total_price">
+                                <span>총 금액</span>
+                                <span class="small">Total Fee</span>
+                                <span class="price">12,000원</span>
+                            </p>
+                        </div>
+                        <div class="pay"><a href="#">결제하기</a></div>
+                    </div><!--.total_fee_wrap-->
+                </div><!--.total_fee-->
+            </div><!--.inner-->
+            <div class="top_btn">
+                <a href="#"><img src="img/top_btn.png" alt="맨위로가기"></a>
+            </div><!--.top_btn-->
+        </div><!--#content-->
+
+
+        <footer>
+            <div class="inner">
+                <div class="footer">
+                    <a href="#"><img src="img/f_logo.png" alt="부산현대미술관로고"></a>
+                    <div class="f_info">
+                        <p>
+                            <span>(우 49300) 부산광역시 사하구 낙동남로 1191 (하단동) 부산현대미술관</span>
+                            <span>전화 : 051 - 220-7400~1</span> 
+                        </p>
+                        <p>
+                            <span>홈페이지의 모든 내용들은 무단 복제가 불가합니다.</span>
+                        </p>
+                        <p>
+                            <span>&copy;copyright 2017 by Museum of Contemporary Art Busan</span>
+                            <span>All rights reserved.</span>
+                        </p>
+                    </div>
+                    <div class="f_sns">
+                        <ul>
+                            <li><a href="#">
+                                <img src="img/f_sns_twt.png" alt="트위터">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_ig.png" alt="인스타그램">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_fb.png" alt="페이스북">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_yt.png" alt="유튜브">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_chat.png" alt="위쳇">
+                            </a></li>
+                        </ul>
+                    </div>
+                </div><!--.footer-->
+    </div>
+    
+</body>
+</html>

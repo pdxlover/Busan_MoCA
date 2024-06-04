@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibition</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/ani.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub1.css">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="index.html">부산현대미술관 로고</a>
+                </h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="sub2.html">Visit</a>
+                            <ul class="depth2">
+                                <li><a href="#">전시 시간</a></li>
+                                <li><a href="#">온라인 예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub1.html">Exhibition</a>
+                            <ul class="depth2">
+                                <li><a href="#">현재 전시</a></li>
+                                <li><a href="#">예정 전시</a></li>
+                                <li><a href="#">지난 전시</a></li>
+                                <li><a href="#">온라인 미술관</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Event</a>
+                            <ul class="depth2">
+                                <li><a href="#">현재 프로그램</a></li>
+                                <li><a href="#">예정 프로그램</a></li>
+                                <li><a href="#">지난 프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Collection</a>
+                            <ul class="depth2">
+                                <li><a href="#">소장품 보기</a></li>
+                                <li><a href="#">모카이브</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Store</a>
+                            <ul class="depth2">
+                                <li><a href="#">미술관 판매 상품</a></li>
+                                <li><a href="#">온라인 판매 상품</a></li>
+                            </ul>
+                        </li>  
+                    </ul><!--.gnb-->
+
+                    <div class="ham">
+                        <a href="#"><img src="img/icon_ham_white.png" alt="메뉴열기"></a>
+                    </div>
+
+                    <div class="dim"></div>
+
+                    <div class="mgnb_wrap">
+                        <div class="mlogo">
+                            <img src="img/logo_white.png" alt="부산현대미술관로고">
+                        </div><!--.mlogo--> 
+                        <ul class="mgnb">
+                            <li><a href="#">Visit</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">전시 시간</a></li>
+                                    <li><a href="#">온라인 예약</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Exhibition</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">현재 전시</a></li>
+                                    <li><a href="#">예정 전시</a></li>
+                                    <li><a href="#">지난 전시</a></li>
+                                    <li><a href="#">온라인 미술관</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Event</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">현재 프로그램</a></li>
+                                    <li><a href="#">예정 프로그램</a></li>
+                                    <li><a href="#">지난 프로그램</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Collection</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">소장품 보기</a></li>
+                                    <li><a href="#">모카이브</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Store</a>
+                                <ul class="mdepth2">
+                                    <li><a href="#">미술관 판매 상품</a></li>
+                                    <li><a href="#">온라인 판매 상품</a></li>
+                                </ul>
+                            </li>
+                        </ul><!--.mgnb-->
+
+                        <div class="mgnb_close">
+                            <img src="img/icon_close_white.png" alt="메뉴 닫기 이미지">
+                        </div><!--.mgnb_close-->
+
+                        <div class="lang">
+                            <div class="kor">KOR</div>
+                            <div class="eng">ENG</div>
+                        </div><!--.mlang-->
+
+                    </div><!--.mgnb_wrap-->
+                </nav>
+
+                <div class="search">
+                    서치박스
+                </div><!--.search-->
+                <div id="gray_layer"></div>
+
+                <div id="over_layer">
+                    <form class="search_pop">
+                        <fieldset>
+                            <legend>검색영역</legend>
+                            <input type="text" placeholder="검색어를 입력해 주세요!">
+                            <button type="button">검색</button>
+                        </fieldset>
+                    </form>
+                    <a href="#" class="search_close">
+                        <img src="img/icon_close_black.png" alt="검색창 닫기">
+                    </a>
+                </div>
+
+                <div class="pclang">
+                    <div class="kor">KOR</div>
+                    <div class="eng">ENG</div>
+                </div><!--.lang-->
+
+            </div><!--.inner-->
+        </header>
+
+        <div id="content">
+            <div class="inner">
+                <ul class="nav_bar">
+                    <li><a href="#now">현재 전시</a></li>
+                    <li><a href="#soon">예정 전시</a></li>
+                    <li><a href="#online">온라인 전시</a></li>
+                </ul>
+
+                <div class="ex_now content_wrap">
+                    <div class="ex_title">
+                        <a name="now"><h2>현재 전시</h2></a>
+                        <span>Exhibition</span>
+                    </div><!--.ex_title-->
+                    <div class="ex_box_wrap">
+                        <div class="ex_box ex_box_01">
+                            <div class="ex_box_move">
+                                <p>이것은 부산이 아니다</p>
+                                <p class="invisi">:전술적 실천</p>
+                                <span>2024. 2. 24 - 2024. 7. 7</span>
+                            </div>
+                        </div>
+                        <div class="ex_box ex_box_02">
+                            <div class="ex_box_move move02">
+                                <p>최정화</p>
+                                <p class="invisi">:온나 온나, 모다 모다</p>
+                                <span>2023. 4 - 2025. 4 </span>
+                            </div>
+                        </div>
+                        <div class="ex_box ex_box_03">
+                            <div class="ex_box_move">
+                                <p>패트릭 블랑</p>
+                                <p class="invisi">:수직정원</p>
+                                <span>2018. 6. 16 - 상설</span>
+                            </div>
+                        </div>
+                    </div><!--.ex_box-wrap-->
+                </div>
+                <div class="ex_soon content_wrap">
+                    <div class="ex_title">
+                        <a name="soon"><h2>예정 전시</h2></a>
+                        <span>Upcoming Exhibition</span>
+                    </div><!--.ex_title-->
+                    <div class="soon_ex_box_wrap">
+                        <div class="soon_ex_box soon_ex_box_01">
+                            <div class="soon_ex_box_move ">
+                                <p class="soon_ex_box_move_title">능수능란한 관종</p>
+                                <p>《능수능란한 관종》은 관심을 갈망하는 인간 
+                                    행동의 역학을 다양한 맥락에서 고찰하고
+                                     궁극적으로 동시대 미술에 나타나고 있는 
+                                     다양한 층위의 관종을 범주화함으로써 과거로부터
+                                      현재까지 이어지는 관심의 역사에 관해 탐구한다.</p>
+                                <span>- 출품작: 회화,조각,사진,영상,설치 등 -</span>
+                            </div>
+                        </div>
+                        <div class="soon_ex_box soon_ex_box_02">
+                            <div class="soon_ex_box_move move02">
+                                <p class="soon_ex_box_move_title">소장품섬_마크 리<br>
+                                    :나의 집이었던 곳</p>
+                                <p>마크 리는 ‘생물 종’의 균질화 과정이 우리의
+                                     삶과 환경에 미치는 영향을 실시간 데이터 
+                                     시각화를 통해 구현하며, STUDIO1750은 유전자
+                                      변형 생명체를 키네틱 설치작품으로 탄생시킨다.</p>
+                                <span>- 출품작: 영상 및 설치 2점 -</span>
+                            </div>
+                        </div>
+                        <div class="soon_ex_box soon_ex_box_03">
+                            <div class="soon_ex_box_move">
+                                <p class="soon_ex_box_move_title"> Re:<br>새-새-의자 </p>
+                                <p>《Re: 새-새-의자》 라는 제목과 같이 
+                                    조형물의 플라스틱 모듈을 이용해 실용 
+                                    가구를 제작하여 폐자재로 인해 파생된 사회 
+                                    환경문제에 대한 관심을 제고하고자 한다</p>
+                                <span>- 출품작: 재활용 플라스틱 이용 디자인 가구 등 -</span>
+                            </div>
+                        </div>
+                        <div class="soon_ex_box soon_ex_box_04">
+                            <div class="soon_ex_box_move move04">
+                                <p class="soon_ex_box_move_title">크고 작은
+                                    도장</p>
+                                <p>국내외 작가 및 그래픽 디자이너가 
+                                    부산현대미술관과 그 주변 환경으로부터 
+                                    얻은 영감의 결과물을 도장 등 상품으로 
+                                    제작·판매하고 야외에는 전시 및 상품과 연계한
+                                     관객 참여형 설치 작품을 선보일 예정이다.</p>
+                                <span>- 출품작: 스티커 등 상품 50여 종, 야외 설치 등 -</span>
+                            </div>
+                        </div>
+                        <div class="soon_ex_box soon_ex_box_05">
+                            <div class="soon_ex_box_move">
+                                <p class="soon_ex_box_move_title">소장품섬_백현주<br>
+                                    :친절한 영자씨</p>
+                                <p>박찬욱 감독의 영화〈친절한 금자씨〉의 주요 
+                                    촬영지였던 부산 주례여고 근방에서 제작된 
+                                    작품 백현주의〈친절한 영자씨〉를 전시하며,이 
+                                    작품은 기억과 현실의 괴리를 되짚는다.</p>
+                                <span>- 출품작: 영화, 설치, 게임, 퍼포먼스 등 -</span>
+                            </div>
+                        </div>
+                        <div class="soon_ex_box soon_ex_box_06">
+                            <div class="soon_ex_box_move move06">
+                                <p class="soon_ex_box_move_title">소장품섬_DIS<br>
+                                    :세상을 제외하고 모두</p>
+                                <p>DIS의 '세상을 제외하고 모두(Everything But The World)'는 극단적 
+                                    자본주의와 기후위기 아래 인류의 역사가 과연 진보하고 있는가에 
+                                    대한 사유를 담는다.</p>
+                                <span>- 출품작: 영화, 설치, 게임, 퍼포먼스 등 -</span>
+                            </div>
+                        </div>
+                    </div><!--.ex_box-wrap-->
+                </div>
+                <div class="ex_online content_wrap">
+                    <div class="ex_title">
+                        <a name="online"><h2>온라인 전시</h2></a>
+                        <span>Online Exhibition </span>
+                    </div><!--.ex_title-->
+                    <div class="on_ex_box_wrap">
+                        <div class="on_ex_box on_ex_box_01">
+                            <div class="on_ex_box_move ">
+                                <p>새로운 매개들</p>
+                                <p class="invisi">:부산 미디어아트의 시작과 계보</p>
+                                <span class="audio_img">오디오 가이드</span>
+                            </div>
+                        </div>
+                        <div class="on_ex_box on_ex_box_02">
+                            <div class="on_ex_box_move move02">
+                                <p>경의로운 전환</p>
+                                <p class="invisi">:THE PHONOMENAL TRANSITION</p>
+                                <span class="audio_img">오디오 가이드</span>
+                            </div>
+                        </div>
+                        <div class="on_ex_box on_ex_box_03">
+                            <div class="on_ex_box_move">
+                                <p>그 후, 그 뒤</p>
+                                <p class="invisi">:POSTERIORITY</p>
+                                <span class="audio_img">오디오 가이드</span>
+                            </div>
+                        </div>
+                        <div class="on_ex_box on_ex_box_04">
+                            <div class="on_ex_box_move move04">
+                                <p>MoCA Cpllection #1</p>
+                                <p class="invisi">:소장품 조명전</p>
+                                <span class="audio_img">오디오 가이드</span>
+                            </div>
+                        </div>
+                        <div class="on_ex_box on_ex_box_05">
+                            <div class="on_ex_box_move">
+                                <p>신실한 실패</p>
+                                <p class="invisi">:재현 불가능한 재현</p>
+                                <span class="audio_img">오디오 가이드</span>
+                            </div>
+                        </div>
+                        <div class="on_ex_box on_ex_box_06">
+                            <div class="on_ex_box_move move06">
+                                <p>감각의 문법</p>
+                                <p class="invisi">:SENSORY GRAMMAR</p>
+                                <span class="audio_img">오디오 가이드</span>
+                            </div>
+                        </div>
+                    </div><!--.ex_box-wrap-->
+                </div>
+            </div><!--.inner-->
+            <div class="top_btn">
+                <a href="#"><img src="img/top_btn.png" alt="맨위로가기"></a>
+            </div><!--.top_btn-->
+        </div><!--#content-->
+
+        <footer>
+            <div class="inner">
+                <div class="footer">
+                    <a href="#"><img src="img/f_logo.png" alt="부산현대미술관로고"></a>
+                    <div class="f_info">
+                        <p>
+                            <span>(우 49300) 부산광역시 사하구 낙동남로 1191 (하단동) 부산현대미술관</span>
+                            <span>전화 : 051 - 220-7400~1</span> 
+                        </p>
+                        <p>
+                            <span>홈페이지의 모든 내용들은 무단 복제가 불가합니다.</span>
+                        </p>
+                        <p>
+                            <span>&copy;copyright 2017 by Museum of Contemporary Art Busan</span>
+                            <span>All rights reserved.</span>
+                        </p>
+                    </div>
+                    <div class="f_sns">
+                        <ul>
+                            <li><a href="#">
+                                <img src="img/f_sns_twt.png" alt="트위터">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_ig.png" alt="인스타그램">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_fb.png" alt="페이스북">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_yt.png" alt="유튜브">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_chat.png" alt="위쳇">
+                            </a></li>
+                        </ul>
+                    </div>
+                </div><!--.footer-->
+                
+            </div><!--.inner-->
+        </footer>
+
+    </div>
+</body>
+</html>

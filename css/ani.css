@@ -1,0 +1,7 @@
+
+
+
+@keyframes subSlide{
+    from{transform: translateY(35px);}
+    to{transform: translateY(0);}
+}

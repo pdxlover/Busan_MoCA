@@ -1,0 +1,1037 @@
+@charset "utf-8";
+
+/*모바일*/
+
+
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    padding: 10px 20px;
+    position: relative;
+}
+header .logo{
+    width: 63px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url(../img/logo_white.png) no-repeat center / auto 40px;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}
+header .logo a{
+    display: block;
+    height: 100%;
+}
+
+.gnb{
+    display: none;
+}
+.ham{
+    width: 25px;
+    height: 17.5px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+.ham img{
+    width: 100%;
+    height: 100%;
+}
+
+.dim{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mgnb_wrap{
+    width: 70%;
+    height: 100%;
+    background-color:#3574F2;
+    position:fixed;
+    top: 0;
+    left: -100%;
+    z-index: 99;
+    padding: 40px 20px;
+}
+.mlogo{
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.mlogo img{
+    width: 100%;
+    height: 100%;
+}
+.mgnb > li{
+    padding: 20px 0;
+    overflow-x: nowrap;
+}
+.mgnb > li a{
+    font-size: 28px;
+    color: #fff;
+}
+.mdepth2 li{
+    padding: 10px 0 0 40px;
+}
+.mdepth2 li a{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.mgnb_close{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.mgnb_close img{
+    width: 100%;
+    height: 100%;
+}
+
+.mgnb_wrap .lang{
+    width: 120px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+    background-color: #3574F2;
+}
+.mgnb_wrap .lang .kor,
+.mgnb_wrap .lang .eng{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.mgnb_wrap .lang .eng{
+    border-radius: 0 50px 50px 0;
+}
+.mgnb_wrap .lang .kor{
+    border-radius: 50px 0 0 50px;
+    border-right: 1px solid #fff;
+}
+.mgnb_wrap .lang .kor:hover,
+.mgnb_wrap .lang .eng:hover{
+    background-color: #fff;
+    color: #3574F2;
+}
+
+
+.search{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3%;
+    background: url(../img/icon_search_white.png) no-repeat center / 40px auto;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}
+.search img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*서치 박스 모달 팝업 시작*/
+#gray_layer{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    cursor: pointer;
+    display: none;
+}
+#over_layer{
+    width: 90%;
+    height:50%;
+    padding: 15px;
+    background-color: #eee;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    display: none;
+    z-index: 999;
+
+}
+#over_layer .close{
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+}
+
+
+#over_layer .search_pop fieldset{
+    width: 90%;
+    border: 0;
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+#over_layer .search_pop input[type="text"]{
+    width: 90%;
+    height: 5%;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 0;
+}
+.search_pop button{
+    width: 100px;
+    height: 60px;
+    background-color: #3574F2;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+.search_close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+.search_close img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*content 시작*/
+.main_visual_wrap{
+    display: none;
+}
+.m_main_slide_wrap{
+    width: 100%;
+    height: 600px;
+}
+.m_main_slide{
+    padding-bottom: 8px;
+    
+}
+.swiper-scrollbar-drag{
+    background-color: #3574F2;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .slide1{
+    background: url(../img/m_main_slide1.png) no-repeat center / cover;
+  }
+  .slide2{
+    background: url(../img/m_main_slide2.png) no-repeat center / cover;
+  }
+  .slide3{
+    background: url(../img/m_main_slide3.png) no-repeat center / cover;
+  }
+
+  .slide_txt_wrap{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    text-align: left;
+  }
+  .slide_txt_wrap span{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .slide_txt_wrap h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .slide_txt_wrap a{
+    display: block;
+    width: 83px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #3574F2;
+    color: #fff;
+    border-radius: 50px;
+  }
+
+
+  /*today's event 영역*/
+  .inner{
+    padding: 50px 20px;
+    }
+  .event_title_wrap{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sub_title{
+    font-size: 12px;
+  }
+  .title{
+    font-family: 'SeoulNamsan';
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .event_photo{
+    width: 100%;
+    height: 30%;
+    position: relative;
+  }
+  .event_photo img{
+    width: 100%;
+    height: 100%;
+  }
+  .event_photo_wrap .left{
+    margin-bottom: 20px;
+  }
+  .event_photo_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+  }
+  .event_photo_txt .event_photo_sub{
+    font-size: 14px;
+    font-family: 'SeoulNamsan';
+    margin-bottom: 10px;
+  }
+  .event_photo_txt .event_photo_title{
+    font-size: 28px;
+  }
+
+  /*collection 영역*/
+  .collection{
+    background-color: #eee;
+  }
+  .collection .swiper{
+    width: 100%;
+    height: 100%;
+  }
+  .collection .swiper-wrapper{
+    display: flex;
+  }
+  
+  .collection .collection_list ul{
+    width: 100%;
+
+  }
+
+.collection .collection_list li{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    
+}
+.collection_list_txt_box{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+.collection_list_txt_box span{
+    width: 30%;
+    color: #3574F2;
+    font-size: 80px;
+    text-align: right;
+}
+.collection_list_txt_box dl{
+    width: 70%;
+    text-align: left;
+    padding-top: 20px;
+}
+.collection .collection_list dl dt{
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.collection .collection_list dl .name{
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+.collection .collection_list dl .size{
+    color: #999;
+}
+.collection .swiper-pagination{
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.collection .swiper-pagination-bullet{
+    background-color: #000;
+}
+
+/*ticket book 영역*/
+.ticket_book_wrap{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+.book_txt{
+    display: none;
+}
+.book_box_wrap{
+    display: flex;
+    width: 100%;
+}
+.book_box{
+    width: calc(100% / 3);
+    background-color: #000;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.book_box.size{
+    width: 50%;
+}
+.book_box a{
+    display: block;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    padding: 5px 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 15px;
+    opacity: 0;
+}
+.book_box.size a{
+    display: block;
+    opacity: 1;
+}
+.book_box .book_box_deco{
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+}
+.book_box .book_box_deco img{
+    width: 100%;
+    height: 100%;
+}
+.book_box.size .book_box_deco{
+    display: block;
+    opacity: 1;
+}
+.book2{
+    background-color: #3574F2;
+}
+.book_txt_wrap{
+    color: #fff;
+    transform: rotate(-90deg) translateX(-70px);
+    transform-origin: left top;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    white-space: nowrap;
+}
+.book_txt_wrap span{
+    letter-spacing: -0.5px;
+}
+
+
+/*store 영역*/
+.md_box_wrap{
+    width: 100%;
+    
+}
+.md_box_wrap .md_box_txt{
+    display: none;
+}
+.md_box_wrap .md_box{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.md_box_wrap .md_box:last-child{
+    margin-bottom: 0;
+}
+.md_box_wrap .md_box img{
+    width: 100%;
+    height: 100%;
+}
+.md_box_wrap .md_box .md_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.md_box_wrap .md_box .md_txt p{
+    font-size: 38px;
+}
+.md_box_wrap .md_box .md_txt span{
+    font-size: 18px;
+}
+
+.store_title_wrap{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .store_sub_title{
+    font-size: 12px;
+  }
+  .store_title{
+    font-family: 'SeoulNamsan';
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+
+
+.top_btn{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 999;
+}
+.top_btn img{
+    width: 100%;
+    height: 100%;
+}
+
+/*footer 영역*/
+footer{
+    background-color: #000;
+}
+.footer img{
+    width: 120px;
+    height: 53px;
+}
+.footer .f_info{
+    color: #fff;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.footer .f_info p{
+    margin-bottom: 10px;
+}
+.footer .f_info p span{
+    margin-right: 20px;
+}
+.footer .f_sns{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.footer .f_sns ul{
+    display: flex;
+}
+.footer .f_sns li{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.footer .f_sns li a img{
+    width: 100%;
+    height: 100%;
+}
+.footer .f_sns li:last-child{
+    margin-right: 0;
+}
+
+
+
+/*768*/
+@media screen and (min-width:768px) {
+
+    .m_main_slide_wrap{
+        height: 800px;
+    }
+    .slide_txt_wrap span{
+        font-size: 30px;
+
+      }
+      .slide_txt_wrap h3{
+        font-size: 40px;
+
+      }
+      .slide_txt_wrap a{
+
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+
+      }
+
+    .collection_list_txt_box span{
+        width: 30%;
+
+        font-size: 70px;
+
+    }
+    .collection_list_txt_box dl{
+        width: 70%;
+
+    }
+
+    
+    .event_title_wrap{
+        text-align: left;
+    }
+    .sub_title{
+        font-size: 16px;
+    }
+    .title{
+        width: 30%;
+        font-size: 60px;
+    }
+    .event_photo_wrap{
+        display: flex;
+        
+        
+    }
+    .event_photo_wrap .left{
+        margin-right: 20px;
+        padding-top: 100px;
+    }
+    .event_photo_txt{ /*텍스트 top값 조정 안됨*/
+        text-align: left;
+        top:auto ;
+        bottom: 0;
+        left: 0;
+        transform: translate(0,0);
+        padding: 20px 20px;
+    }
+
+
+    .collection .collection_list li{
+        transform: scale(0.8);
+        opacity: 0.5;
+        transition: all 0.5s;
+    }
+    .collection .collection_list li.swiper-slide-active{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+
+    .ticket_book_wrap{
+        height: 450px;
+    }
+
+    
+.store_title_wrap{
+    display: none;
+}
+
+.md_box_wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.md_box_wrap .md_box_txt{
+    display: block;
+}
+.md_box_wrap .md_box{
+    margin-bottom: 0;
+    height: 386px;
+}
+.md_box_wrap .md_rec{
+    width: 60%;
+}
+.md_box_wrap .md_sq{
+    width: 40%;
+}
+.md_box_txt{
+    display: block;
+    padding: 20px;
+}
+
+.md_box_txt p{
+    font-size: 16px;
+  }
+.md_box_txt h3{
+    font-family: 'SeoulNamsan';
+    text-transform: uppercase;
+    font-size: 60px;
+  }
+.md_box_txt span{
+    font-size: 14px;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer img{
+    margin-right: 20px;}
+.footer .f_info{
+    margin-top: 0;
+
+}
+.footer .f_sns li{
+    width: 30px;
+    height: 30px;
+}
+.footer .f_sns{
+    margin-top: 0;
+}
+    
+}
+
+
+/*1200*/
+
+@media screen and (min-width:1200px) {
+   
+
+    /*헤더 스크롤 액션
+    .fixed_header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #f36;
+        height: 60px;
+    }*/
+
+    header{
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+        padding: 20px 0;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+        transition: all 0.5s;
+    }
+    header .logo{
+        width: 145px;
+        height: 90px;
+        background: url(../img/logo_black.png) no-repeat center / auto 90px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+    }
+    .gnb{
+        display: block;
+        display: flex;
+       position: absolute;
+       top:50%;
+       transform: translateY(-50%);
+       right: 15%;
+       
+    }
+    .gnb > li{
+        position: relative;
+        padding: 0 40px;
+
+    }
+    .gnb > li a{
+        font-size: 20px;
+        color: #000;
+    }
+    .gnb > li .depth2{
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        transform: translateX(-50%);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        background-color:#3574F2;
+
+        display: none;
+        border-radius: 10px;
+    }
+    .gnb > li .depth2 > li{
+        text-align: center;
+        white-space: nowrap;
+        padding: 20px 30px;
+    }
+    .gnb > li .depth2 > li:first-child{
+        border-radius: 10px 10px 0 0;
+    }
+    .gnb > li .depth2 > li:last-child{
+        border-radius: 0 0 10px 10px;
+    }
+    .gnb > li .depth2 > li a{
+        font-size: 14px;
+        color: #fff;
+    }
+    .gnb > li .depth2 > li:hover{
+        background-color: #fff;
+    }
+    .gnb > li .depth2 > li:hover a{
+        color: #3574F2;
+        font-weight: bold;
+    }
+
+    .ham{
+        display: none;
+    }
+
+
+    .search{
+        width: 60px;
+        height: 50px;
+        background: url(../img/icon_search_black.png) no-repeat center / auto 50px;
+    }
+    .pclang{
+        width: 80px;
+        height: 30px;
+        border-radius: 50px;
+        border: 1px solid #000;
+        color: #000;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 8%;
+        display: flex;
+    }
+.pclang .kor,
+.pclang .eng{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+.pclang .eng{
+    border-radius: 0 50px 50px 0;
+}
+.pclang .kor{
+    border-radius: 50px 0 0 50px;
+    border-right: 1px solid #000;
+}
+.pclang .kor:hover,
+.pclang .eng:hover{
+    background-color: #000;
+    border: 0;
+    color: #fff;
+}
+
+
+/*메인비주얼 영역*/
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    }
+
+.m_main_slide_wrap{
+    display: none;
+}
+.main_visual_wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_photo{
+    width: 70%;
+    height: 453px;
+    overflow: hidden;
+}
+.main_photo img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+.main_photo:hover img{
+    transform: scale(1.2);
+}
+.main_txt{
+    width: 30%;
+    height: 453px;
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+}
+.main_txt p{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.main_txt h3{
+    font-size: 28px;
+    font-weight: bold;
+}
+.main_txt a{
+    width: 90px;
+    height: 40px;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin-top: 20px;
+    background: url(../img/more_btn_deco.png) no-repeat center left / 38px auto;
+    transition: all 0.3s;
+}
+.main_txt a:hover{ /*마우스 오버하면 원 오른쪽으로 안됨*/
+    background-image: url(../img/more_btn_deco_long.png);
+    background-position: left;
+    background-size: 85px auto;
+}
+.main_txt span{
+    display: block;
+    margin-top: 120px;
+    font-size: 20px;
+
+}
+
+.collection_list_txt_box dl{
+    width: 70%;
+}
+.collection .collection_list dl dt{
+    font-size: 25px;
+}
+.collection .collection_list dl .name{
+    font-size: 18px;
+}
+.collection_list_txt_box span{
+    font-size: 70px;
+    width: 30%;
+}
+
+.book_txt{
+    display: block;
+    width: 800px;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+    overflow: hidden;
+}
+.book_txt .book_txt_logo{
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.book_txt .book_txt_logo img{
+    width: 100%;
+    height: 100%;
+}
+.book_txt .book_txt_deco{
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    bottom: -20px;
+    right: 50px;
+    transform: rotate(-180deg);
+}
+.book_txt .book_txt_deco img{
+    width: 100%;
+    height: 100%;
+    
+}
+.book_txt .book_txt_deco2{
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+   
+}
+.book_txt .book_txt_deco2 img{
+    width: 100%;
+    height: 100%;
+}
+.book_txt .book_txt_title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.book_txt .book_txt_title p{
+    font-family: 'SeoulNamsan';
+    font-size: 35px;
+    font-weight: bold;
+}
+.book_txt .book_txt_title  span{
+    font-family: 'SeoulNamsan';
+    font-size: 20px;
+}
+.book_box_wrap{
+    width: calc(100% - 800px);
+}
+.md_box .md_txt{
+    opacity: 0;
+    transition: all ease-in 0.5s;
+}
+.md_box:hover .md_txt{
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+
+
+    
+}
