@@ -329,7 +329,9 @@
         transform: scaleX(1);
     }
 
-
+    .ex_box{
+        cursor: pointer;
+    }
 
     .ex_box .ex_box_move{
         animation: none;
@@ -337,23 +339,60 @@
         transition: all 0.3s;
         cursor: pointer;
     }
+    /*
     .ex_box .ex_box_move:hover{
         transform: translateY(0);
         
     }
+    */
 
+    .ex_box_01:hover .move01{
+        transform: translateY(0);
+    }
+    .ex_box_02:hover .move02{
+        transform: translateY(0);
+    }
+    .ex_box_03:hover .move03{
+        transform: translateY(0);
+    }
 
+    .on_ex_box{
+        cursor: pointer;
+    }
     .on_ex_box .on_ex_box_move{
         animation: none;
         transform: translateY(35px);
         transition: all 0.3s;
         cursor: pointer;
     }
+    /*
     .on_ex_box .on_ex_box_move:hover{
         transform: translateY(0);
         
     }
-
+    */
+    .on_ex_box_01:hover .on_move01{
+        transform: translateY(0);
+    }
+    .on_ex_box_02:hover .on_move02{
+        transform: translateY(0);
+    }
+    .on_ex_box_03:hover .on_move03{
+        transform: translateY(0);
+    }
+    .on_ex_box_04:hover .on_move04{
+        transform: translateY(0);
+    }
+    .on_ex_box_05:hover .on_move05{
+        transform: translateY(0);
+    }
+    .on_ex_box_06:hover .on_move06{
+        transform: translateY(0);
+    }
+    
+    .soon_ex_box{
+        cursor: pointer;
+    }
 
     .soon_ex_box .soon_ex_box_move{
         opacity: 0;
