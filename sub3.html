@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/ani.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub1.css">
+    <link rel="stylesheet" href="css/sub2.css">
+    <link rel="stylesheet" href="css/sub3.css">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="index.html">부산현대미술관 로고</a>
+                </h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="sub2.html">Visit</a>
+                            <ul class="depth2">
+                                <li><a href="sub2.html">전시 시간</a></li>
+                                <li><a href="sub2.html">온라인 예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub1.html">Exhibition</a>
+                            <ul class="depth2">
+                                <li><a href="sub1.html">현재 전시</a></li>
+                                <li><a href="sub1.html">예정 전시</a></li>
+                                <li><a href="sub1.html">온라인 미술관</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub3.html">Event</a>
+                            <ul class="depth2">
+                                <li><a href="sub3.html">현재/예정 프로그램</a></li>
+                                <li><a href="sub3.html">지난 프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub4.html">Collection</a>
+                            <ul class="depth2">
+                                <li><a href="sub4.html">소장품 보기</a></li>
+                                <li><a href="sub4_2.html">모카이브</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub5.html">Store</a>
+                            <ul class="depth2">
+                                <li><a href="sub5.html">미술관 판매 상품</a></li>
+                                <li><a href="sub5.html">온라인 판매 상품</a></li>
+                            </ul>
+                        </li>  
+                    </ul><!--.gnb-->
+
+                    <div class="ham">
+                        <a href="#"><img src="img/icon_ham_white.png" alt="메뉴열기"></a>
+                    </div>
+
+                    <div class="dim"></div>
+
+                    <div class="mgnb_wrap">
+                        <div class="mlogo">
+                            <img src="img/logo_white.png" alt="부산현대미술관로고">
+                        </div><!--.mlogo--> 
+                        <ul class="mgnb">
+                            <li><a href="sub2.html">Visit</a>
+                                <ul class="mdepth2">
+                                    <li><a href="sub2.html">전시 시간</a></li>
+                                    <li><a href="sub2.html">온라인 예약</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sub1.html">Exhibition</a>
+                                <ul class="mdepth2">
+                                    <li><a href="sub1.html">현재 전시</a></li>
+                                    <li><a href="sub1.html">예정 전시</a></li>
+                                    <li><a href="sub1.html">온라인 미술관</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sub3.html">Event</a>
+                                <ul class="mdepth2">
+                                    <li><a href="sub3.html">현재/예정 프로그램</a></li>
+                                    <li><a href="sub3.html">지난 프로그램</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sub4.html">Collection</a>
+                                <ul class="mdepth2">
+                                    <li><a href="sub4.html">소장품 보기</a></li>
+                                    <li><a href="sub4_2.html">모카이브</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sub5.html">Store</a>
+                                <ul class="mdepth2">
+                                    <li><a href="sub5.html">미술관 판매 상품</a></li>
+                                    <li><a href="sub5.html">온라인 판매 상품</a></li>
+                                </ul>
+                            </li>
+                        </ul><!--.mgnb-->
+
+                        <div class="mgnb_close">
+                            <img src="img/icon_close_white.png" alt="메뉴 닫기 이미지">
+                        </div><!--.mgnb_close-->
+
+                        <div class="lang">
+                            <div class="kor">KOR</div>
+                            <div class="eng">ENG</div>
+                        </div><!--.mlang-->
+
+                    </div><!--.mgnb_wrap-->
+                </nav>
+
+                <div class="search">
+                    서치박스
+                </div><!--.search-->
+                <div id="gray_layer"></div>
+
+                <div id="over_layer">
+                    <form class="search_pop">
+                        <fieldset>
+                            <legend>검색영역</legend>
+                            <input type="text" placeholder="검색어를 입력해 주세요!">
+                            <button type="button">검색</button>
+                        </fieldset>
+                    </form>
+                    <a href="#" class="search_close">
+                        <img src="img/icon_close_black.png" alt="검색창 닫기">
+                    </a>
+                </div>
+
+                <div class="pclang">
+                    <div class="kor">KOR</div>
+                    <div class="eng">ENG</div>
+                </div><!--.lang-->
+
+            </div><!--.inner-->
+        </header>
+
+        <div id="content">
+            <div class="inner">
+                <ul class="nav_bar">
+                    <li><a href="#current_program">현재/예정 프로그램</a></li>
+                    <li><a href="#past_program">지난 프로그램</a></li>
+                </ul>
+
+                <div class="program content_wrap">
+                    <div class="ex_title">
+                        <a name="current_program">
+                            <h2>현재/예정 프로그램</h2>
+                        </a>
+                        <span>Current/Upcomimg Events</span>
+                    </div><!--.ex_title-->
+
+                    <div class="program_box_wrap">
+                        <div class="program_box">
+                            <div class="pro_img pro_img_01">
+                                <div class="detail_hover"><a href="#">View Detail</a></div>
+                            </div>
+                            <div class="program_info">
+                                <div class="program_tit">[미술관 밖 프로젝트] #_만나는 손과 손: 수평적 감각</div>
+                            </div>
+                        </div><!--program_box pro_box_1-->
+                        <div class="program_box">
+                            <div class="pro_img pro_img_02">
+                                <div class="detail_hover"><a href="#">View Detail</a></div>
+                            </div>
+                            <div class="program_info">
+                                <div class="program_tit">2024 청소년 진로 탐색 프로그램&lt;부산모카 반짝&gt;</div>
+                            </div>
+                        </div><!--program_box pro_box_1-->
+                        <div class="program_box">
+                            <div class="pro_img pro_img_03">
+                                <div class="detail_hover"><a href="#">View Detail</a></div>
+                            </div>
+                            <div class="program_info">
+                                <div class="program_tit">[미술관 밖 프로젝트] #_멀지만 가까운, 가깝지만 먼</div>
+                            </div>
+                        </div><!--program_box pro_box_1-->
+                        <div class="program_box">
+                            <div class="pro_img pro_img_04">
+                                <div class="detail_hover"><a href="#">View Detail</a></div>
+                            </div>
+                            <div class="program_info">
+                                <div class="program_tit">[미술관 밖 프로젝트] #_온기, 열기, 녹아내리는</div>
+                            </div>
+                        </div><!--program_box pro_box_1-->
+                        <div class="program_box">
+                            <div class="pro_img pro_img_05">
+                                <div class="detail_hover"><a href="#">View Detail</a></div>
+                            </div>
+                            <div class="program_info">
+                                <div class="program_tit">[미술관 밖 프로젝트] #_소리 보기, 읽기, 조합하기</div>
+                            </div>
+                        </div><!--program_box pro_box_1-->
+                    </div><!--.program_box-wrap-->
+                </div><!--.ex_now content_wrap-->
+
+                
+                <div class="program content_wrap">
+                    <div class="ex_title">
+                        <a name="past_program">
+                            <h2>지난 프로그램</h2>
+                        </a>
+                        <span>Past Events</span>
+                    </div><!--.ex_title-->
+
+                    <div class="program_box_wrap">
+                        <div class="program_box">
+                            <div class="pro_img past_pro_img_01">
+                                <div class="detail_hover"><a href="#">프로그램 종료</a></div>
+                            </div>
+                            <div class="program_info">
+                                <div class="program_tit">《능수능란한 관종》 전시 연계 〈렉처 퍼포먼스: 블랙박스를 향하여〉</div>
+                            </div>
+                        </div><!--program_box pro_box_1-->
+                        <div class="program_box">
+                            <div class="pro_img past_pro_img_02">
+                                <div class="detail_hover"><a href="#">프로그램 종료</a></div>
+                            </div>
+                            <div class="program_info">
+                                <div class="program_tit">《이것은 부산이 아니다: 전술적 실천》 전시 연계 〈전시추진 공유 잡담회〉</div>
+                            </div>
+                        </div><!--program_box pro_box_1-->
+                        <div class="program_box">
+                            <div class="pro_img past_pro_img_03">
+                                <div class="detail_hover"><a href="#">프로그램 종료</a></div>
+                            </div>
+                            <div class="program_info">
+                                <div class="program_tit">《능수능란한 관종》 전시 연계 퍼포먼스 〈모어 & 신민〉</div>
+                            </div>
+                        </div><!--program_box pro_box_1-->
+                        <div class="program_box">
+                            <div class="pro_img past_pro_img_04">
+                                <div class="detail_hover"><a href="#">프로그램 종료</a></div>
+                            </div>
+                            <div class="program_info">
+                                <div class="program_tit">2024 미술관 전문인 대상 교육 3부 <미술관의 안팎을 넘나드는 예술과 매체의 역사></div>
+                            </div>
+                        </div><!--program_box pro_box_1-->
+                        <div class="program_box">
+                            <div class="pro_img past_pro_img_05">
+                                <div class="detail_hover"><a href="#">프로그램 종료</a></div>
+                            </div>
+                            <div class="program_info">
+                                <div class="program_tit">지가미 지가미 #3: 폐플라스틱 업사이클 워크숍</div>
+                            </div>
+                        </div><!--program_box pro_box_1-->
+                        <div class="program_box">
+                            <div class="pro_img past_pro_img_06">
+                                <div class="detail_hover"><a href="#">프로그램 종료</a></div>
+                            </div>
+                            <div class="program_info">
+                                <div class="program_tit">지가미 지가미 #2: 캠페인 룩북 촬영</div>
+                            </div>
+                        </div><!--program_box pro_box_1-->
+                    </div><!--.program_box-wrap-->
+                </div><!--.ex_now content_wrap-->
+
+                <!--현재/예정 프로그램 모달팝업-->
+                <div id="gray_layer"></div>
+
+                <div class="modal">
+                    <div class="popup_detail">
+                        <div class="popup_left">
+                            <div class="popup_tit">프로젝트 with 김은설 #_만나는 손과 손: 수평적 감각</div>
+                            <div class="popup_con">무언가를 붙일 때 사용해 온 오래된 문구류인 풀이 <span>다양한
+                                    관계망을 사유</span>하게 하는 예술적 도구가 됩니다. 손에 풀을 묻히고 반복하면
+                                가느다란 풀실이 만들어지는데요, 김은설 작가는 풀실에서 <span>사람 간의 보이지
+                                    않는 관계</span>를 떠올립니다.<br>끈끈한 풀을 손바닥에 고루 발라 알맞은 거리까지
+                                늘려서 실을 뽑아내는 동작은 적절한 사람 간의 거리에 관해 생각하게 하고,
+                                 풀실을 겹쳐 만든 투명한 얇은 막은 <span>은밀한 내면세계를 은유</span>하기도 합니다. 
+                                이번 시간에는 김은설 작가와 함께 풀실 모빌을 만들며 자신의 내면 이야기와
+                                주변 사람과의 관계에 관해 대화하는 시간을 갖습니다.</div>
+                            <ul class="popup_info">
+                                <li><span>일시:</span>2024. 9. 29.(일)</li>
+                                <li><span>장소:</span>동아대 석당미술관</li>
+                                <li><span>대상:</span>초등 4학년 이상 누구나 (미성년자 참여시 보호자 참석 필수)</li>
+                                <li><span>진행:</span>김은설 작가</li>
+                                <li><span>참여:</span>부산광역시 통합예약시스템</li>
+                                <li><span>문의:</span>부산현대미술관 학예연구실 051-220-7357</li>
+                            </ul>
+                        </div><!--popup_left-->
+                        <div class="popup_right">
+                            <img src="img/modal_popup_img_01.png" alt="이미지1">
+                            <img src="img/modal_popup_img_01_2.png" alt="이미지2">
+                        </div><!--popup_right-->
+                    </div>
+                    <a href="#" class="detail_close">
+                        <img src="img/icon_close_black.png" alt="검색창 닫기">
+                    </a>
+                </div><!--modal-->
+                <div class="modal">
+                    <div class="popup_detail">
+                        <div class="popup_left">
+                            <div class="popup_tit">2024 청소년 진로 탐색 프로그램&lt;부산모카 반짝&gt;</div>
+                            <div class="popup_con">부산현대미술관은 청소년에게 미술관 관련 직업에 대한
+                                경험을 제공하여 자신의 예술적인 관심사를 발견하고 문화예술 관련 진로
+                                선택에 도움을 줄 수 있는 청소년 진로 탐색 프로그램을 마련하였습니다.
+                                청소년의 창의성을 발휘하고 예술적 소양을 향상시키는 동시에 미술관
+                                관련 직업에 대한 관심과 이해를 증진시킬 수 있는 특별한 시간을 제공합니다. </div>
+                            <ul class="popup_info">
+                                <li><span>교육대상:</span>부산시 중‧고등학교 학급 단체</li>
+                                <li><span>교육장소:</span>부산현대미술관 교육실 혹은 학급 현장</li>
+                                <li><span>운영일시:</span>2024. 6. 14.(금)-7. 5.(금 / 9. 20.(금)-11. 1(금) 총 30회</li>
+                                <li><span>신청방법:</span>꿈길</li>
+                                <li>​※ 본 프로그램은 국립현대미술관과 함께 합니다.</li>
+                            </ul>
+                        </div><!--popup_left-->
+                        <div class="popup_right">
+                            <img src="img/modal_popup_img_02.png" alt="이미지1">
+                            <img src="img/modal_popup_img_02_2.png" alt="이미지2">
+                        </div><!--popup_right-->
+                    </div>
+                    <a href="#" class="detail_close">
+                        <img src="img/icon_close_black.png" alt="검색창 닫기">
+                    </a>
+                </div><!--modal-->
+                <div class="modal">
+                    <div class="popup_detail">
+                        <div class="popup_left">
+                            <div class="popup_tit">프로젝트 with 홍보미 #_멀지만 가까운, 가깝지만 먼</div>
+                            <div class="popup_con">두 번째 프로젝트는 시각예술에서 가장 멀어 보이는 시각
+                                약자를 시각 세계의 한복판인 미술관으로 초대하는 여정을 꾸려갑니다.
+                                시각예술 창작자이자 미술관 청소부로 활약한 독특한 이력을 가진 홍보미
+                                작가가 부산맹학교를 찾아가 시각장애를 가진 학생들과 미술과 비미술의
+                                경계와 그 사이를 탐구하며 서로가 필요한 존재임을 알아가는 시간을 가집니다.</div>
+                            <ul class="popup_info">
+                                <li><span>일시:</span> 2024. 6. ~ 10. 중 총 6회</li>
+                                <li><span>장소:</span>부산맹학교</li>
+                                <li><span>대상:</span>부산맹학교 고등학생</li>
+                                <li><span>진행:</span> 홍보미 작가</li>
+                            </ul>
+                        </div><!--popup_left-->
+                        <div class="popup_right">
+                            <img src="img/modal_popup_img_03.png" alt="이미지1">
+                            <img src="img/modal_popup_img_03_2.png" alt="이미지2">
+                        </div><!--popup_right-->
+                    </div>
+                    <a href="#" class="detail_close">
+                        <img src="img/icon_close_black.png" alt="검색창 닫기">
+                    </a>
+                </div><!--modal-->
+                <div class="modal">
+                    <div class="popup_detail">
+                        <div class="popup_left">
+                            <div class="popup_tit">프로젝트 with 김덕희 #_온기, 열기, 녹아내리는</div>
+                            <div class="popup_con">당신에게 소중한 사람이 있나요? 그, 그녀의 손을
+                                유심히 관찰한 적이 있나요? 우리는 주로 얼굴을 보고 상대를 구별합니다.
+                                하지만 만약 얼굴을 볼 수 없다면 손만큼 상대를 잘 구분 할 수 있는 신체
+                                부위도 없습니다. 손에는 지문과 손금 뿐 아니라 세월이 흔적이 고스란히
+                                담겨있습니다. 이 시간에는 소중한 사람을 전시장으로 데리고 와 함께
+                                전시를 감상하고 김덕희 작가와 함께 소중한 사람의 손을 석고로 떠냅니다.
+                                석고 손은 김덕희 작가의 작품으로 완성되며 24년 부산현대미술관 기획 전시에서 만나볼 수 있습니다. </div>
+                            <ul class="popup_info">
+                                <li><span>일시:</span>2024. 9. 25.(수) ~ 10. 20.(일)</li>
+                                <li><span>장소:</span>동아대 석당미술관</li>
+                                <li><span>대상:</span>부산 시민 누구나 (미성년자 참여시 보호자 참석 필수)</li>
+                                <li><span>진행:</span>김덕희 작가</li>
+                                <li><span>참여:</span>신청서를 작성하여 메일 접수, 미술관에서 참가자 선정 후 전화 안내</li>
+                                <li><span>문의:</span>부산현대미술관 학예연구실 051-220-7357</li>
+                            </ul>
+                        </div><!--popup_left-->
+                        <div class="popup_right">
+                            <img src="img/modal_popup_img_04.png" alt="이미지1">
+                            <img src="img/modal_popup_img_04_2.png" alt="이미지2">
+                        </div><!--popup_right-->
+                    </div>
+                    <a href="#" class="detail_close">
+                        <img src="img/icon_close_black.png" alt="검색창 닫기">
+                    </a>
+                </div><!--modal-->
+                <div class="modal">
+                    <div class="popup_detail">
+                        <div class="popup_left">
+                            <div class="popup_tit">프로젝트 with SEOM: #_소리 보기, 읽기, 조합하기</div>
+                            <div class="popup_con">SEOM:이 지속해온 &lt;Sound Marking&gt;, &lt;기억을 산책하는 방법&gt;
+                                        활동의 연장이자 변형 프로젝트로 일상의 소리 풍경을 재구성합니다. 부산현대미술관과
+                                        부산 도심에서는 어떤 소리가 만들어지고 사라질까요? 각각의 소리 주인은 누구이고
+                                        어떤 청각적 특징을 지니고 있을까요? 시각 정보가 사라지고 소리만 남았을 때
+                                        우리는 소리를 통해 무엇을 보고, 읽고, 떠올리고, 만지고, 기억할 수 있을까요?
+                                        아티스트와 함께하는 소리 채집 활동을 통해 귀가 수행하는 여러 감각 활동에 대해 알아봅니다.</div>
+                            <ul class="popup_info">
+                                <li><span>일시:</span>2024. 7. 6.(토) / 9. 29.(일)</li>
+                                <li><span>장소:</span>부산현대미술관 / 동아대 석당미술관 주변 일대</li>
+                                <li><span>대상:</span>초등 3학년 이상 누구나 (미성년자 참여시 보호자 참석 필수)</li>
+                                <li><span>진행:</span> SEOM: (서하늬, 엄예슬 작가)</li>
+                                <li><span>참여:</span>부산광역시 통합예약시스템</li>
+                                <li><span>문의:</span>부산현대미술관 학예연구실 051-220-7357</li>
+                            </ul>
+                        </div><!--popup_left-->
+                        <div class="popup_right">
+                            <img src="img/modal_popup_img_05.png" alt="이미지1">
+                            <img src="img/modal_popup_img_05_2.png" alt="이미지2">
+                        </div><!--popup_right-->
+                    </div>
+                    <a href="#" class="detail_close">
+                        <img src="img/icon_close_black.png" alt="검색창 닫기">
+                    </a>
+                </div><!--modal-->
+            </div><!--.inner-->
+            <div class="top_btn">
+                <a href="#"><img src="img/top_btn.png" alt="맨위로가기"></a>
+            </div><!--.top_btn-->
+        </div><!--#content-->
+        <footer>
+            <div class="inner">
+                <div class="footer">
+                    <a href="#"><img src="img/f_logo.png" alt="부산현대미술관로고"></a>
+                    <div class="f_info">
+                        <p>
+                            <span>(우 49300) 부산광역시 사하구 낙동남로 1191 (하단동) 부산현대미술관</span>
+                            <span>전화 : 051 - 220-7400~1</span> 
+                        </p>
+                        <p>
+                            <span>홈페이지의 모든 내용들은 무단 복제가 불가합니다.</span>
+                        </p>
+                        <p>
+                            <span>&copy;copyright 2017 by Museum of Contemporary Art Busan</span>
+                            <span>All rights reserved.</span>
+                        </p>
+                    </div>
+                    <div class="f_sns">
+                        <ul>
+                            <li><a href="#">
+                                <img src="img/f_sns_twt.png" alt="트위터">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_ig.png" alt="인스타그램">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_fb.png" alt="페이스북">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_yt.png" alt="유튜브">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_chat.png" alt="위쳇">
+                            </a></li>
+                        </ul>
+                    </div>
+                </div><!--.footer-->
+                
+            </div><!--.inner-->
+        </footer>
+    </div><!--#wrap-->
+</body>
+
+</html>

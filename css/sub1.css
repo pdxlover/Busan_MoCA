@@ -13,6 +13,7 @@
     width: 100%;
     height: 50px;
     display: flex;
+    justify-content: center;
 }
 .nav_bar li{
     width: calc(100% / 3);
@@ -239,12 +240,26 @@
     background: url(../img/volume.png) no-repeat left center / 20px 20px;
 }
 
+/*sub3.html 시작*/
+.event_img_01{
+    background: url(../img/event_img_01.jpg) no-repeat center / cover;
+}
+.event_img_02{
+    background: url(../img/event_img_02.jpg) no-repeat center / cover;
+}
+.event_img_03{
+    background: url(../img/event_img_03.jpg) no-repeat center / cover;
+}
+
 
 
 
 
 /*768 이상*/
 @media screen and (min-width:768px) {
+    .content_wrap{
+        padding: 0;
+    }
     .ex_box_wrap{
         display: flex;
     }
@@ -266,7 +281,7 @@
         height: 400px;
     }
     .nav_bar{
-        margin: 40px 0;
+        margin-bottom: 40px;
     }
     .nav_bar li a{
         font-size: 16px;

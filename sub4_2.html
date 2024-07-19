@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mocarchive</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/ani.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub1.css">
+    <link rel="stylesheet" href="css/sub4.css">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="index.html">부산현대미술관 로고</a>
+                </h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="sub2.html">Visit</a>
+                            <ul class="depth2">
+                                <li><a href="sub2.html">전시 시간</a></li>
+                                <li><a href="sub2.html">온라인 예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub1.html">Exhibition</a>
+                            <ul class="depth2">
+                                <li><a href="sub1.html">현재 전시</a></li>
+                                <li><a href="sub1.html">예정 전시</a></li>
+                                <li><a href="sub1.html">온라인 미술관</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub3.html">Event</a>
+                            <ul class="depth2">
+                                <li><a href="sub3.html">현재/예정 프로그램</a></li>
+                                <li><a href="sub3.html">지난 프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub4.html">Collection</a>
+                            <ul class="depth2">
+                                <li><a href="sub4.html">소장품 보기</a></li>
+                                <li><a href="sub4_2.html">모카이브</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub5.html">Store</a>
+                            <ul class="depth2">
+                                <li><a href="sub5.html">미술관 판매 상품</a></li>
+                                <li><a href="sub5.html">온라인 판매 상품</a></li>
+                            </ul>
+                        </li>
+                    </ul><!--.gnb-->
+
+                    <div class="ham">
+                        <a href="#"><img src="img/icon_ham_white.png" alt="메뉴열기"></a>
+                    </div>
+
+                    <div class="dim"></div>
+
+                    <div class="mgnb_wrap">
+                        <div class="mlogo">
+                            <img src="img/logo_white.png" alt="부산현대미술관로고">
+                        </div><!--.mlogo-->
+                        <ul class="mgnb">
+                            <li><a href="sub2.html">Visit</a>
+                                <ul class="mdepth2">
+                                    <li><a href="sub2.html">전시 시간</a></li>
+                                    <li><a href="sub2.html">온라인 예약</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sub1.html">Exhibition</a>
+                                <ul class="mdepth2">
+                                    <li><a href="sub1.html">현재 전시</a></li>
+                                    <li><a href="sub1.html">예정 전시</a></li>
+                                    <li><a href="sub1.html">온라인 미술관</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sub3.html">Event</a>
+                                <ul class="mdepth2">
+                                    <li><a href="sub3.html">현재/예정 프로그램</a></li>
+                                    <li><a href="sub3.html">지난 프로그램</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sub4.html">Collection</a>
+                                <ul class="mdepth2">
+                                    <li><a href="sub4.html">소장품 보기</a></li>
+                                    <li><a href="sub4_2.html">모카이브</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sub5.html">Store</a>
+                                <ul class="mdepth2">
+                                    <li><a href="sub5.html">미술관 판매 상품</a></li>
+                                    <li><a href="sub5.html">온라인 판매 상품</a></li>
+                                </ul>
+                            </li>
+                        </ul><!--.mgnb-->
+
+                        <div class="mgnb_close">
+                            <img src="img/icon_close_white.png" alt="메뉴 닫기 이미지">
+                        </div><!--.mgnb_close-->
+
+                        <div class="lang">
+                            <div class="kor">KOR</div>
+                            <div class="eng">ENG</div>
+                        </div><!--.mlang-->
+
+                    </div><!--.mgnb_wrap-->
+                </nav>
+
+                <div class="search">
+                    서치박스
+                </div><!--.search-->
+                <div id="gray_layer"></div>
+
+                <div id="over_layer">
+                    <form class="search_pop">
+                        <fieldset>
+                            <legend>검색영역</legend>
+                            <input type="text" placeholder="검색어를 입력해 주세요!">
+                            <button type="button">검색</button>
+                        </fieldset>
+                    </form>
+                    <a href="#" class="search_close">
+                        <img src="img/icon_close_black.png" alt="검색창 닫기">
+                    </a>
+                </div>
+
+                <div class="pclang">
+                    <div class="kor">KOR</div>
+                    <div class="eng">ENG</div>
+                </div><!--.lang-->
+
+            </div><!--.inner-->
+        </header>
+
+        <div id="content">
+            <div class="inner">
+                <ul class="nav_bar">
+                    <li><a href="sub4.html">소장품보기</a></li>
+                    <li><a href="#moca">모카이브</a></li>
+                </ul>
+
+
+                <a name="moca">
+                    <div class="mocahive_main_img">
+                        MOCARCHIVE
+                    </div><!--mocahive_main_img-->
+                </a>
+                <div class="mocahive_txt">
+                    <h2>MoCA + Archive</h2>
+                    <p>아카이브(archive)는 <span>영구적으로 보존할 가치가 있는 기록물</span>,
+                        그 기록물을 보관하는 장소, 그리고 기록물을 수집하고 관리하는
+                        기관이란 세 가지 의미가 있습니다.
+                        모카이브는 미술관 영문명 MoCA(Museum of Contemporary Art
+                            BUSAN)와 Archive(아카이브)의 합성어로, 수집한 <span>예술·문화
+                                관련 자료와 미술관활동 과정에서 생산된 아카이브를 선별,
+                                분류, 정리, 보존</span>하며 그 성과물을 시민과 공유합니다.</p>
+                </div><!--mocahive_txt-->
+                <div class="toggle_box_wrap">
+                    <div>
+                        <div class="mocahive_btn sharebtn">
+                            <p>모카이브는 공유합니다</p>
+                            <span><img src="img/icon_open.png"></span>
+                        </div>
+                        <div class="mocahive_panel share_panel">
+                            <ul>
+                                <li>미술관 아카이브<br>
+                                    <span>소장품, 전시, 교육, 학술 등 부산현대미술관 아카이브</span>
+                                </li>
+                                <li>소장품 작가파일<br>
+                                    <span>부산현대미술관 소장품 작가의 포트폴리오, 도록, 자료 등</span>
+                                </li>
+                                <li>라이브러리 컬렉션<br>
+                                    <span>미술 전문도서, 타 기관 도록 및 발간자료, 잡지, 학술지</span>
+                                </li>
+                                <li>학술 데이터베이스, 해외 온라인 매거진</li>
+                                <li>미디어아트 영상</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="mocahive_btn userinfobtn">
+                            <p>이용안내</p>
+                            <span><img src="img/icon_open.png"></span>
+                        </div>
+                        <div class="mocahive_panel userinfobtn_panel">
+                            <ul>
+                                <li>장 소<br>
+                                    <span> 부산현대미술관 3F 모카이브(MoCArchive)</span>
+                                </li>
+                                <li>운영시간<br>
+                                    <span>화요일-토요일, 10:00-17:30(점심시간 12-13시 휴실)</span>
+                                </li>
+                                <li>휴 실 일<br>
+                                    <span>월요일, 일요일, 법정 공휴일</span>
+                                </li>
+                                <li>자료이용<br>
+                                    <span>모카이브 내에서 자유롭게 이용 (대출 불가)</span><br>
+                                    <span>미술관 아카이브, 소장품 작가파일, 영상작품 등은 열람신청서 작성 후 이용</span>
+                                </li>
+                                <li>구독 간행물 및 학술지<br>
+                                    <span>학술데이터베이스 : DBpia</span><br>
+                                    <span>인쇄 간행물</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="mocahive_btn rulebtn">
+                            <p>준수사항</p>
+                            <span><img src="img/icon_open.png"></span>
+                        </div>
+                        <div class="mocahive_panel rule_panel">
+                            <ul>
+                                <li>개인 소지품은 안내데스크에 보관해주십시오.</li>
+                                <li>열람실 내 음료, 음식물 반입이 불가합니다.</li>
+                                <li>모든 자료 소중히 다뤄주시고 훼손, 분실에 주의해주십시오.</li>
+                                <li>실내에서는 정숙해주시고 휴대폰 이용은 자제해주십시오.</li>
+                                <li>PC는 자료 열람, 검색 외 개인용도로 사용 불가합니다.</li>
+                                <li>어린이는 보호자 동반이 필수이고 미취학 아동은 이용을 제한합니다.</li>
+                                <li>단체 방문 시 사전 문의 바랍니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--toggle_box_wrap-->
+
+            </div><!--.inner-->
+            <div class="top_btn">
+                <a href="#"><img src="img/top_btn.png" alt="맨위로가기"></a>
+            </div><!--.top_btn-->
+        </div><!--#content-->
+        <footer>
+            <div class="inner">
+                <div class="footer">
+                    <a href="#"><img src="img/f_logo.png" alt="부산현대미술관로고"></a>
+                    <div class="f_info">
+                        <p>
+                            <span>(우 49300) 부산광역시 사하구 낙동남로 1191 (하단동) 부산현대미술관</span>
+                            <span>전화 : 051 - 220-7400~1</span> 
+                        </p>
+                        <p>
+                            <span>홈페이지의 모든 내용들은 무단 복제가 불가합니다.</span>
+                        </p>
+                        <p>
+                            <span>&copy;copyright 2017 by Museum of Contemporary Art Busan</span>
+                            <span>All rights reserved.</span>
+                        </p>
+                    </div>
+                    <div class="f_sns">
+                        <ul>
+                            <li><a href="#">
+                                <img src="img/f_sns_twt.png" alt="트위터">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_ig.png" alt="인스타그램">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_fb.png" alt="페이스북">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_yt.png" alt="유튜브">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/f_sns_chat.png" alt="위쳇">
+                            </a></li>
+                        </ul>
+                    </div>
+                </div><!--.footer-->
+                
+            </div><!--.inner-->
+        </footer>
+
+    </div><!--#wrap-->
+</body>
+
+</html>
