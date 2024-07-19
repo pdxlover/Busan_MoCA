@@ -72,7 +72,7 @@
     transform: translate(-50%);
     border-radius: 10px;
     display: none;
-    z-index: 999;
+    z-index: 9999;
     padding: 50px 20px;
     overflow-y: scroll;
 
