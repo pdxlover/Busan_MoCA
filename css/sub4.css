@@ -2,14 +2,14 @@
 
 /* 모바일*/
 .collection_search .search_tit{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     
 }
 .collection_search .search_tit::after{
     content: "";
     display: block;
-    border: 1px solid #3574F2;
+    border: 1px solid #eee;
     margin: 5px 0 20px;
 }
 .collection_search .search_flex{
@@ -84,7 +84,6 @@
     color: #fff;
     border: none;
     cursor: pointer;
-    letter-spacing: 0.2em;
 }
 /*소장품 사진*/
 .program_box_wrap .program_box .coll_img_01{

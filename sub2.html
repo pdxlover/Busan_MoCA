@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visit</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="css/ani.css">
     <link rel="stylesheet" href="css/main.css">
@@ -17,6 +18,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/common.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <header>
@@ -51,12 +53,7 @@
                                 <li><a href="sub4_2.html">모카이브</a></li>
                             </ul>
                         </li>
-                        <li><a href="sub5.html">Store</a>
-                            <ul class="depth2">
-                                <li><a href="sub5.html">미술관 판매 상품</a></li>
-                                <li><a href="sub5.html">온라인 판매 상품</a></li>
-                            </ul>
-                        </li>  
+                        <li><a href="sub5.html">Store</a></li>
                     </ul><!--.gnb-->
 
                     <div class="ham">
@@ -68,7 +65,7 @@
                     <div class="mgnb_wrap">
                         <div class="mlogo">
                             <img src="img/logo_white.png" alt="부산현대미술관로고">
-                        </div><!--.mlogo--> 
+                        </div><!--.mlogo-->
                         <ul class="mgnb">
                             <li><a href="sub2.html">Visit</a>
                                 <ul class="mdepth2">
@@ -95,12 +92,7 @@
                                     <li><a href="sub4_2.html">모카이브</a></li>
                                 </ul>
                             </li>
-                            <li><a href="sub5.html">Store</a>
-                                <ul class="mdepth2">
-                                    <li><a href="sub5.html">미술관 판매 상품</a></li>
-                                    <li><a href="sub5.html">온라인 판매 상품</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="sub5.html">Store</a></li>
                         </ul><!--.mgnb-->
 
                         <div class="mgnb_close">
@@ -149,10 +141,14 @@
                     <li><a href="#total_fee">총 결제 금액</a></li>
                 </ul>
 
-                <div class="online_ticket">
+                <div class="online_ticket content_wrap">
                     <div class="ex_title">
-                        <a name="online_ticket_book"><h2>온라인 티켓 예약</h2></a>
-                        <span>Book Online Tickets</span>
+                        <div class="ex_tit_flex_wrap">
+                            <a name="online_ticket_book">
+                                <h2>온라인 티켓 예약</h2>
+                            </a>
+                            <span>Book Online Tickets</span>
+                        </div>
                     </div><!--.ex_title-->
 
                     <div class="calendar">
@@ -226,10 +222,14 @@
 
                 </div><!--.online_ticket-->
 
-                <div class="ticket_fee">
+                <div class="ticket_fee content_wrap">
                     <div class="ex_title">
-                        <a name="entry_fee"><h2>입장권 가격</h2></a>
-                        <span>Entry Fee</span>
+                        <div class="ex_tit_flex_wrap">
+                            <a name="entry_fee">
+                                <h2>입장권 가격</h2>
+                            </a>
+                            <span>Entry Fee</span>
+                        </div>
                     </div><!--.ex_title-->
 
                     <div class="entry_fee">
@@ -249,7 +249,7 @@
                                         <span>어린이</span>
                                         <span class="small_txt">(Under 13)</span>
                                     </p>
-                                    
+
                                 </div><!--.personal_price_sub-->
                                 <div class="personal_price_money">
                                     <p>12,000원</p>
@@ -272,38 +272,42 @@
                         </div><!--.entry_fee_flex_wrap-->
                         <div class="count">
                             <div class="count_wrap">
-                            <div class="count_box">
-                                <button type="button" class="plus">+</button>
-                                <div class="result">0</div>
-                                <button type="button" class="minus">-</button>
-                            </div><!--.count_box-->
-                            <div class="count_box">
-                                <button type="button" class="plus">+</button>
-                                <div class="result">0</div>
-                                <button type="button" class="minus">-</button>
-                            </div><!--.count_box-->
-                            <div class="count_box">
-                                <button type="button" class="plus">+</button>
-                                <div class="result">0</div>
-                                <button type="button" class="minus">-</button>
-                            </div><!--.count_box-->
+                                <div class="count_box">
+                                    <button type="button" class="plus">+</button>
+                                    <div class="result">0</div>
+                                    <button type="button" class="minus">-</button>
+                                </div><!--.count_box-->
+                                <div class="count_box">
+                                    <button type="button" class="plus">+</button>
+                                    <div class="result">0</div>
+                                    <button type="button" class="minus">-</button>
+                                </div><!--.count_box-->
+                                <div class="count_box">
+                                    <button type="button" class="plus">+</button>
+                                    <div class="result">0</div>
+                                    <button type="button" class="minus">-</button>
+                                </div><!--.count_box-->
                             </div>
                             <div class="count_wrap_2">
-                            <div class="count_box special_count">
-                                <button type="button" class="plus">+</button>
-                                <div class="result">0</div>
-                                <button type="button" class="minus">-</button>
-                            </div><!--.count_box special_count-->
+                                <div class="count_box special_count">
+                                    <button type="button" class="plus">+</button>
+                                    <div class="result">0</div>
+                                    <button type="button" class="minus">-</button>
+                                </div><!--.count_box special_count-->
                             </div>
                         </div><!--.count-->
-                        
+
                     </div><!--.entry_fee-->
                 </div><!--.ticket_fee-->
 
-                <div class="total_fee">
+                <div class="total_fee content_wrap">
                     <div class="ex_title">
-                        <a name="total_fee"><h2>총 결제 금액</h2></a>
-                        <span>Total Fee</span>
+                        <div class="ex_tit_flex_wrap">
+                            <a name="total_fee">
+                                <h2>총 결제 금액</h2>
+                            </a>
+                            <span>Total Fee</span>
+                        </div>
                     </div><!--.ex_title-->
 
                     <div class="total_fee_wrap">
@@ -337,7 +341,7 @@
                     <div class="f_info">
                         <p>
                             <span>(우 49300) 부산광역시 사하구 낙동남로 1191 (하단동) 부산현대미술관</span>
-                            <span>전화 : 051 - 220-7400~1</span> 
+                            <span>전화 : 051 - 220-7400~1</span>
                         </p>
                         <p>
                             <span>홈페이지의 모든 내용들은 무단 복제가 불가합니다.</span>
@@ -350,24 +354,25 @@
                     <div class="f_sns">
                         <ul>
                             <li><a href="#">
-                                <img src="img/f_sns_twt.png" alt="트위터">
-                            </a></li>
+                                    <img src="img/f_sns_twt.png" alt="트위터">
+                                </a></li>
                             <li><a href="#">
-                                <img src="img/f_sns_ig.png" alt="인스타그램">
-                            </a></li>
+                                    <img src="img/f_sns_ig.png" alt="인스타그램">
+                                </a></li>
                             <li><a href="#">
-                                <img src="img/f_sns_fb.png" alt="페이스북">
-                            </a></li>
+                                    <img src="img/f_sns_fb.png" alt="페이스북">
+                                </a></li>
                             <li><a href="#">
-                                <img src="img/f_sns_yt.png" alt="유튜브">
-                            </a></li>
+                                    <img src="img/f_sns_yt.png" alt="유튜브">
+                                </a></li>
                             <li><a href="#">
-                                <img src="img/f_sns_chat.png" alt="위쳇">
-                            </a></li>
+                                    <img src="img/f_sns_chat.png" alt="위쳇">
+                                </a></li>
                         </ul>
                     </div>
                 </div><!--.footer-->
-    </div>
-    
+            </div>
+
 </body>
+
 </html>

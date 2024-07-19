@@ -8,17 +8,9 @@
 .online_ticket{
     position: relative;
 }
-.online_ticket .ex_title{
-    display: flex;
-    margin-bottom: 60px;
-}
-.online_ticket .ex_title span{
-    line-height: 40px;
-    font-size: 12px;
-    margin-left: 10px;
-}
+
 .nav_bar li a{
-    white-space: wrap;
+    white-space: nowrap;
 }
 
 .online_ticket{
@@ -184,15 +176,7 @@
 
 
 /*입장권 가격*/
-.ticket_fee .ex_title{
-    display: flex;
-    margin-bottom: 20px;
-}
-.ticket_fee .ex_title span{
-    line-height: 40px;
-    font-size: 12px;
-    margin-left: 10px;
-}
+
 
 
 
@@ -233,15 +217,7 @@
 
 
 /*총 결재 금액*/
-.total_fee .ex_title{
-    display: flex;
-    margin-bottom: 20px;
-}
-.total_fee .ex_title span{
-    line-height: 40px;
-    font-size: 12px;
-    margin-left: 10px;
-}
+
 .total_fee_wrap{
     padding: 40px;
     width: 100%;
@@ -322,10 +298,6 @@
     .days li{
         height: 200px;
         font-size: 40px;
-    }
-
-    .months{
-        top: 180px;
     }
     .online_ticket .ex_title{
         margin-bottom: 100px;
@@ -441,11 +413,6 @@
         background-size: 120px auto;
     }
 
-
-
-    .ex_title{
-        margin: 80px 0;
-    }
 
 
     

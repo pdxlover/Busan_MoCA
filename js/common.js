@@ -167,14 +167,14 @@ $(document).ready(function () {//시작
         modals[num].style.display = "block";
         console.log(num);
         $("#gray_layer").show();
-        document.body.style.overflowY = "hidden";
+        document.body.style.overflow = "hidden";
       };
 
       // <span> 태그(X 버튼)를 클릭하면 Modal이 닫습니다.
       spanes[num].onclick = function () {
         modals[num].style.display = "none";
         $("#gray_layer").hide();
-        document.body.style.overflowY = "auto";
+        document.body.style.overflow = "auto";
       };
     };
   }
