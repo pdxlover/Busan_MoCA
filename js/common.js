@@ -167,15 +167,28 @@ $(document).ready(function () {//시작
         modals[num].style.display = "block";
         console.log(num);
         $("#gray_layer").show();
-        document.body.style.overflow = "hidden";
+
+        $('html, body').css({ 'overflow': 'hidden', 'height': '100%' }); // 모달팝업 중 html,body의 scroll을 hidden시킴
+        $('#element').on('scroll touchmove mousewheel', function (event) { // 터치무브와 마우스휠 스크롤 방지
+          event.preventDefault();
+          event.stopPropagation();
+
+          return false;
+        });
+
       };
 
       // <span> 태그(X 버튼)를 클릭하면 Modal이 닫습니다.
       spanes[num].onclick = function () {
         modals[num].style.display = "none";
         $("#gray_layer").hide();
-        document.body.style.overflow = "auto";
+        
+        $('html, body').css({ 'overflow': 'auto', 'height': '100%' }); //scroll hidden 해제
+        $('#element').off('scroll touchmove mousewheel'); // 터치무브 및 마우스휠 스크롤 가능
+
       };
+
+
     };
   }
 
@@ -196,13 +209,13 @@ $(document).ready(function () {//시작
     $(".share_panel").slideToggle("fast");
   });
 
-  $(".userinfobtn").click(function(){
+  $(".userinfobtn").click(function () {
     $(".userinfobtn_panel").slideToggle("fast");
   });
-  
-  $(".rulebtn").click(function(){
+
+  $(".rulebtn").click(function () {
     $(".rule_panel").slideToggle("fast");
-  }); 
+  });
 
 
 
